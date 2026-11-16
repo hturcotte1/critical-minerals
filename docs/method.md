@@ -62,7 +62,23 @@ The RMI completeness check in REPORT.md uses those public lists as a stand-in fo
 ## 5. Merging and checks
 
 - **Merging.** Workstreams wrote JSON Lines files in `data/staging/`. A validation script checked every row against the controlled vocabularies (stage, status, assessment, availability, score, confidence) and checked that every cited URL is listed as a source. A build script merged the workstreams, removed duplicate rows, assigned IDs, and wrote the CSV files and `suppliers.xlsx`.
-- **Verification pass.** After the research, separate verifiers re-checked a random sample of rows from every chain against the cited sources. They checked owner, location, status, capacity, offtakes, awards and assessment. Discrepancies were corrected in the data, and the results are summarised in REPORT.md.
+- **Verification pass.** After the research, separate verifiers re-checked a random sample of rows from every chain against the cited sources: 74 rows, about 15%. They checked owner, location, status, capacity, offtakes, awards and assessment.
+  - Results: 36 confirmed, 28 minor issues, 9 major issues, 1 unverifiable.
+  - Every finding was corrected in the data, in eight logged batches (`data/staging/verification/fixes/`). Where a finding applied to sibling rows of the same company, those rows were corrected too. The one unverifiable row was removed.
+  - Details are in REPORT.md, section 12.
+- **Consistency pass.** A script (`tools/consistency.py`) applied the uniform rules in `docs/decisions.md` (21a, 21b) across all rows:
+  - processors with undisclosed third-party feed are graded `at_risk`;
+  - the tie field reads "unknown" when feed origin is undisclosed;
+  - closed sites are scored 1.
+
+  It lists the remaining deliberate exceptions, for example MP Materials' immaterial 3% Shenghe stake.
+- **Completeness checks.** Run against the final data:
+  - USGS producing countries;
+  - public RMAP proxy lists;
+  - an independently compiled list of US government awardees since 2020 (`data/staging/verification/award_crosscheck.md`);
+  - operating suppliers per stage.
+
+  Results are in REPORT.md, section 11.
 
 ## 6. Practical limits that shaped the research
 

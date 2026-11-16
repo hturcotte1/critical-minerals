@@ -2,7 +2,99 @@
 
 *Research date: 16 November 2026. Written for a non-technical reader. The data behind every statement is in `suppliers.xlsx` / `data/*.csv`, where every row is dated and sourced.*
 
-<!-- SUMMARY_PLACEHOLDER -->
+## Summary
+
+**What we built.**
+- **495 supplier rows** (one per company, facility and production stage) across 58 countries.
+- **149 known supply agreements.**
+- **140 facilities inside China, Russia, Iran and North Korea**, listed for screening paperwork.
+- **826 cited sources.**
+- Every row has a compliance screen, a capacity-commitment flag, a broker-fit score and its sources.
+
+| Chain | Supplier rows | Notes |
+|---|---|---|
+| NdFeB (rare-earth magnets) | 133 | mining 37, separation 29, metal/alloy 12, sintered magnets 25, bonded 6, recycling 19, iron/boron 3, substitutes 2 |
+| Tungsten | 79 | all 5 stages |
+| Molybdenum | 63 | added because the FY2026 NDAA put it in the statute |
+| Tantalum | 57 | all 5 stages |
+| Cobalt (for SmCo) | 35 | |
+| Gallium / germanium | 27 / 21 | covered from 18 Dec 2027 |
+| SmCo magnets | 17 | |
+| Traders, stockholders, stockpiles | 34 | |
+| Labs | 29 | |
+
+**The rule, as of 16 November 2026** (details in `docs/scope.md`):
+- **The ban.** From 1 January 2027, DoD material may not be mined, refined, separated, melted or produced in China, Russia, North Korea or Iran. Under the new deviation clause 252.225-7961 (June 2026), the upstream part applies to contracts awarded from that date. The older 252.225-7052 clause applies it to deliveries.
+- **Molybdenum is now covered by statute**, and gallium and germanium follow on 18 December 2027.
+- **Executive Order 14415** ends most non-availability waivers from 1 January 2027 and prepares a ban on suppliers under covered-country ownership or influence.
+- **No delay has been enacted.** The House FY2027 NDAA would rewrite the regime, including a test requiring 50% of cost from US-owned producers for key materials, but it is not law.
+
+### The five most important findings
+
+1. **The choke points are a handful of midstream steps, not mining or magnet-making in general.**
+   - Each choke point has only a few non-China plants, and most of their output is already committed:
+     - separated **dysprosium/terbium** and heavy rare earth metal;
+     - **samarium metal**: one Western plant, short of feed;
+     - **US tungsten APT** conversion: none independent until about 2029;
+     - **molybdenum powder** with a documented feed;
+     - **primary gallium**: about 3 t outside China in 2025.
+   - These are where a broker who can find and document supply is worth the most.
+2. **"Made outside China" is not the same as compliant.**
+   - Of 432 producing-chain rows, only **117 are operating and screen as likely compliant**. Another 200 are `at_risk`, mostly because their feed is Chinese or undisclosed.
+   - Examples:
+     - Japan's TDK runs on stockpiled Chinese rare earths.
+     - Kazakhstan's Ulba tantalum plant now buys Russian feed.
+     - A.L.M.T. (Japan) has a molybdenum plant in China, 70% owned by Xiamen Tungsten.
+     - A "Korean" tungsten smelter appears to be a Xiamen Tungsten affiliate.
+     - Western gallium refiners run on Chinese crude.
+   - Origin cannot be proven by lab testing once material is refined. Documentation and witnessed sampling are the product.
+3. **The US government is the biggest competing buyer, not a seller.**
+   - DLA has stopped publishing stockpile disposals. Instead it signed purchase contracts:
+     - tungsten from Elmet, up to $2B;
+     - cobalt from Glencore, up to $900M (reported);
+     - gallium from ATALCO, up to $350M;
+     - tantalum ingot from GAM, up to $100M.
+   - DoD/DoW took equity in MP Materials, Elmet ($450M), ATALCO and Alcoa's gallium plant.
+   - Project Vault ($10B EXIM) is stockpiling for manufacturers.
+   - Compliant spot inventory at distributors is essentially unavailable: only one (MCE) even claims DFARS-compliant stock.
+4. **Ownership changed fast in 2024-2026; check it on every deal.**
+   - Changes by buyer:
+     - Energy Fuels: bought ASM's Korean Metals Plant; buying VAC/e-VAC.
+     - USA Rare Earth: bought Less Common Metals, Serra Verde and all of Round Top.
+     - Mitsubishi Materials: H.C. Starck Tungsten.
+     - Sandvik: Buffalo Tungsten.
+     - Molymet: Rhenium Alloys.
+     - Elmet: buying ams OSRAM's tungsten/molybdenum plant.
+   - Chinese owners now hold assets that sit *outside* China:
+     - Mineração Taboca (Brazil tantalum, CNMC);
+     - Tanco (Canada, Sinomine);
+     - Peak's Ngualla (Tanzania, Shenghe);
+     - Boguty (Kazakhstan tungsten);
+     - Las Bambas and Toromocho (Peru molybdenum).
+
+     These pass today's location test but are exposed to the coming ownership tests.
+5. **There is real, uncommitted volume to broker for 2027-2028, mostly at mid-size, newly funded producers:**
+   - **e-VAC** (2,000 t/yr magnets, freed by GM's exit);
+   - **USA Rare Earth Stillwater** (magnets, no named buyers);
+   - **Ucore** (heavy rare earth separation);
+   - **Iluka Eneabba** (~90% uncommitted from 2028);
+   - **Centerra's Langeloth roaster** (idle molybdenum capacity);
+   - **Buffalo Tungsten** and **EQ Resources** (tungsten);
+   - **PLS** (tantalite with no buyer);
+   - **METLEN** and **ATALCO** (gallium);
+   - **Electron Energy** (SmCo) and **LS Eco Energy Vietnam** (samarium metal);
+   - **Jervois Brazil** (cobalt).
+
+### The biggest gaps
+
+These stages have zero or near-zero compliant supply in 2027 (full table in section 10):
+- uncommitted Dy/Tb oxide and any heavy rare earth metal;
+- samarium metal and SmCo recycling;
+- ferroboron;
+- independent US tungsten APT;
+- primary gallium;
+- US refined cobalt;
+- validated origin testing for refined products.
 
 ---
 
@@ -13,7 +105,7 @@
 - **The broker-fit score (1-5)** rates how likely a supplier is to sell through us:
   - higher for small and mid-size firms with uncommitted volume, a clean profile, output in 2027-28, and signs they are seeking buyers or capital;
   - lower for captive, fully committed or non-compliant suppliers.
-- **"Top 10 broker prospects"** lists in each chain come from those scores, with ties broken by how soon the supply is available.
+- **"Top 10 broker prospects"** lists in each chain are drawn mainly from the highest scores. A few entries are placed by judgment, for timing or strategic importance; for example, BGR's origin-fingerprinting method ranks above higher-scored grade labs. Each table shows the row's ID and score, so you can find it in `suppliers.xlsx`.
 - **Capacity figures** are in the unit the source used. Where nobody publishes a number, we say "unknown" rather than estimate.
 
 ---
@@ -63,22 +155,24 @@
 - Lynas is acquiring Meteoric (Caldeira), and Wyloo now owns 60% of Yangibana.
 - China's Shenghe owns Peak (Ngualla) and holds about 3% of MP Materials, a passive stake.
 
+<!-- TOP10_ndfeb -->
 **Top 10 broker prospects (NdFeB)**
 
-| # | Company - facility | Why |
-|---|---|---|
-| 1 | Ucore - Louisiana Strategic Metals Complex (US) | DoW-funded medium/heavy-RE separation from 2027, uncommitted; needs both feed and customers (score 5) |
-| 2 | e-VAC Magnetics - Sumter SC (US) | 2,000 t/yr sintered, mostly uncommitted after GM's exit; DLA-qualified; upstream chain must be documented |
-| 3 | USA Rare Earth - Stillwater OK (US) | 600 → 1,200 t/yr sintered, no named offtakes; well funded (Commerce CHIPS); needs proof of alloy origin |
-| 4 | Iluka - Eneabba refinery (Australia) | ~90% of NdPr and Dy/Tb from 2028 uncommitted; government-financed; actively seeking customers |
-| 5 | Energy Fuels - Korean Metals Plant (Korea) | Main merchant non-China NdFeB alloy and NdPr metal; act before it becomes captive to VAC |
-| 6 | Noveon Magnetics - San Marcos TX (US) | US recycled route fits the statutory recycled-magnet exemption; DLA-qualified; fresh funding |
-| 7 | Rainbow Rare Earths - Phalaborwa (South Africa) | 60% of NdPr uncommitted (Neo has only an MoU); DFC-backed; first production 2028 |
-| 8 | Pensana - Longonjo (Angola) | First production 2027, uncommitted, pursuing a US route (EXIM LOI); low confidence |
-| 9 | Hastings/BZNM - Kabin Buri (Thailand) | 12,000 t/yr MREC from Q2 2027 with no offtake; verify the African feed origin and the co-owner |
-| 10 | Niron Magnetics - Sartell MN (US) | Rare-earth-free substitute, 1,500 t/yr, uncommitted, DoW-backed. Not a covered material, so it sidesteps the rule where the design allows |
+| # | ID | Company - facility (country) | Score | Why |
+|---|---|---|---|---|
+| 1 | ND-065 | Ucore Louisiana LLC (Ucore Rare Metals) - Louisiana Strategic Metals Complex (SMC), England Airpark (United States) | 5 | DoW-funded medium/heavy-RE separation from 2027, uncommitted; needs both feed and customers |
+| 2 | ND-093 | e-VAC Magnetics LLC - eVAC Sumter plant (United States) | 4 | 2,000 t/yr sintered, mostly uncommitted after GM's exit (Oct 2026); DLA-qualified; upstream chain must be documented |
+| 3 | ND-100 | USA Rare Earth, Inc. - Stillwater magnet plant (Phase 1a/1b) (United States) | 4 | 600 rising to 1,200 t/yr sintered, no named offtakes; well funded (Commerce CHIPS); needs proof of alloy origin |
+| 4 | ND-039 | Iluka Resources Limited - Eneabba Rare Earths Refinery (Australia) | 4 | ~90% of NdPr and Dy/Tb from 2028 uncommitted; Australian-government financed; seeking customers |
+| 5 | ND-071 | Australian Strategic Materials - Korean Metals Plant (Energy Fuels subsidiary) - Korean Metals Plant (KMP) (South Korea) | 4 | Main merchant non-China NdFeB alloy and NdPr metal (Energy Fuels); act before it becomes captive to VAC |
+| 6 | ND-098 | Noveon Magnetics Inc. - San Marcos magnet plant (United States) | 4 | US recycled route fits the statutory recycled-magnet exemption; DLA-qualified; fresh funding |
+| 7 | ND-053 | Rainbow Rare Earths Limited (Phalaborwa) - Phalaborwa Rare Earths Project (South Africa) | 4 | 60% of NdPr uncommitted (Neo has only an MoU); DFC-backed; first production 2028 |
+| 8 | ND-001 | Pensana plc (Ozango Minerais, Longonjo) - Longonjo NdPr project (Angola) | 4 | First production 2027, uncommitted, pursuing a US route (EXIM LOI); low confidence |
+| 9 | ND-030 | BZNM Co Ltd (Hastings 49%) - Kabin Buri hydrometallurgical plant (Thailand) | 3 | 12,000 t/yr MREC from Q2 2027 with no offtake; verify the African feed origin and the co-owner |
+| 10 | ND-133 | Niron Magnetics, Inc. - Sartell full-scale manufacturing plant (United States) | 4 | Rare-earth-free substitute, 1,500 t/yr, uncommitted, DoW-backed; not a covered material, so it sidesteps the rule where the design allows |
 
 Runners-up: Phoenix Tailings (US metal and separation), HyProMag USA (recycling), Vulcan Elements (10,000 t/yr, commissioning 2027), Caremag (Dy/Tb), REalloys/SRC (Dy/Tb metal 2028), Neo Narva (EU magnets).
+<!-- /TOP10_ndfeb -->
 
 ---
 
@@ -97,7 +191,7 @@ Runners-up: Phoenix Tailings (US metal and separation), HyProMag USA (recycling)
 |---|---|
 | Mine / concentrate | Masan Nui Phao (Vietnam, ~2,000 t W/yr, plans 5,000-6,000 t); Almonty Sangdong (Korea, first concentrate Sep 2026; ~90% of Phase I sold to GTP for 21 years); Wolfram Bergbau Mittersill (Austria, captive to Sandvik); Panasqueira (Portugal, Almonty); EQ Resources Barruecopardo (Spain) and Mt Carbine (Australia, expanding early 2027); Group 6 Dolphin (Tasmania, ramping up). Next wave: Hemerdon (UK, 2027), Springer (Nevada, Q4 2027), El Moto (Spain, 2029, exclusive to Traxys), Pilot Mountain (Nevada), Mactung and Sisson (Canada) |
 | APT / oxide | Masan Tungsten Chemicals (Vietnam, >9,000 t/yr, selling spare capacity); GTP Towanda PA (~10,000-12,000 t/yr oxide, mostly recycled feed); WBH St. Martin (Austria); H.C. Starck Goslar (Germany, Mitsubishi Materials); Japan New Metals (feed origin undisclosed); Niagara Refining (captive) |
-| Metal powder | GTP; H.C. Starck; WBH; **Buffalo Tungsten** (independent, NY); **Elmet** Coldwater MI (DoW-funded fivefold expansion); Plansee; Treibacher; Kennametal (captive); Japanese/Korean makers (feed origin undisclosed) |
+| Metal powder | GTP; H.C. Starck; WBH; **Buffalo Tungsten** (NY; merchant powder seller, Sandvik-owned since 2023); **Elmet** Lewiston ME (tungsten powder now) and Coldwater MI (new tungsten furnace ~Q1 2027; DoW-funded fivefold expansion); H.C. Starck Sarnia, Canada (tolls tungsten powder for Elmet); Plansee; Treibacher; Kennametal (captive); Japanese/Korean makers (feed origin undisclosed) |
 | Heavy alloy and parts | Plansee group (CIME Bocuze, France, penetrator material; Plansee Composite Materials; Mi-Tech Indianapolis); Elmet Euclid OH and Lewiston ME; Wolfmet (UK); Wolfram Industrie (Germany); A.L.M.T. (Japan) |
 | Scrap recycling | GTP (largest US recycler); H.C. Starck Goslar (expanding to ~7,000 t/yr by 2028); WBH; Japan New Metals; Tungco (Kentucky); GTP Finland |
 
@@ -118,6 +212,23 @@ Runners-up: Phoenix Tailings (US metal and separation), HyProMag USA (recycling)
 - Several Asian APT plants on public smelter lists have owners we could not verify: Lianyou ×2 (Taiwan), Philippine Bonway, Philippine Chuangxin, Tungsten Vietnam JSC and KENEE.
 
 <!-- TOP10_tungsten -->
+**Top 10 broker prospects (tungsten)**
+
+| # | ID | Company - facility (country) | Score | Why |
+|---|---|---|---|---|
+| 1 | W-050 | Buffalo Tungsten Inc. - Buffalo Tungsten Depew plant (United States) | 4 | Merchant W and WC powder made from non-Chinese oxide, sold to outside customers of any size; owned by Sandvik since Dec 2023 |
+| 2 | W-001 | EQ Resources Limited (Mt Carbine) - Mt Carbine tungsten mine (Australia) | 4 | Small Australian producer ramping up, with an A$39M expansion due early 2027 and no offtake found |
+| 3 | W-018 | Tungsten West plc (Hemerdon) - Hemerdon (Drakelands) tungsten-tin mine (United Kingdom) | 4 | UK concentrate from 2027, freshly funded; offtakes not found |
+| 4 | W-052 | Elmet Technologies LLC (Lewiston) - Elmet Lewiston plant (United States) | 4 | US tungsten powder now and a DoW-funded fivefold expansion; much output tied to its own defense programs |
+| 5 | W-064 | Elmet Technologies LLC (Euclid) - Elmet Euclid plant (former H.C. Starck Solutions) (United States) | 4 | US heavy-alloy and plate producer expanding with DoW money; clean non-PRC feed |
+| 6 | W-038 | Masan Tungsten Chemicals (Masan High-Tech Materials; formerly Nui Phao H.C. Starck Tungsten Chemicals) - Nui Phao tungsten chemical plant (Vonfram Masan) (Vietnam) | 4 | Largest non-China APT/oxide plant, selling spare capacity as tolling; document origin lot by lot |
+| 7 | W-079 | Tungco Inc. - Tungco Madisonville facility (United States) | 4 | Independent US scrap processor with uncommitted volumes; scrap-origin paperwork needed for the recycled route |
+| 8 | W-013 | Almonty Korea Tungsten Corp. (AKTC) - Sangdong Tungsten Mine and processing plant (South Korea) | 3 | Phase II (~+2,300 t/yr concentrate, 2027) is outside the 21-year GTP contract |
+| 9 | W-002 | Group 6 Metals Limited (Dolphin) - Dolphin Tungsten Mine and processing plant (Australia) | 3 | Small, clean Tasmanian producer ramping up; existing offtakes may be partial |
+| 10 | W-022 | Nui Phao Mining Company (Masan High-Tech Materials) - Nui Phao polymetallic mine (Vietnam) | 3 | Largest non-China mine, expanding and openly seeking strategic investors and offtakers |
+
+Runners-up: Panasqueira (Almonty, Portugal), Guardian Pilot Mountain (Nevada, later), Wolfmet (UK) and Wolfram Industrie (Germany) for heavy alloy, Blue Moon Springer (Nevada, Q4 2027, partly committed to Elmet).
+<!-- /TOP10_tungsten -->
 
 ---
 
@@ -149,6 +260,23 @@ Runners-up: Phoenix Tailings (US metal and separation), HyProMag USA (recycling)
 **DLA as a competitor for supply:** DLA holds a sole-source tantalum ingot contract with GAM (ceiling $100M; orders of $8.6M and $15.1M so far). It also holds a niobium ingot contract (up to $50M).
 
 <!-- TOP10_tantalum -->
+**Top 10 broker prospects (tantalum)**
+
+| # | ID | Company - facility (country) | Score | Why |
+|---|---|---|---|---|
+| 1 | TA-003 | PLS Group Limited (Pilbara Minerals) - Pilgangoora operation (Pilgan and Ngungaju plants) (Australia) | 4 | Clean Australian by-product tantalite (~220,600 lb concentrate in FY26) with no disclosed buyer |
+| 2 | TA-018 | AMG Brasil S.A. - Materiais Especiais unit, Sao Joao del Rei plant (BR-383 km 94) (Brazil) | 4 | Mid-size, clean mine-to-oxide chain (Mibra), no disclosed oxide offtakes, rising tantalum volumes |
+| 3 | TA-014 | Uis Tin Mining Company (Pty) Ltd (Andrada Mining) - Uis mine and tin processing plant (Namibia) | 4 | Small Namibian producer marketing traceable, conflict-free concentrate; AIM-listed and seeking capital |
+| 4 | TA-016 | Trinity Metals Limited (Trinity Musha) - Musha mine (incl. Ntunga area), 6,094 ha concession (Rwanda) | 4 | US-backed (DFC, TechMet) Rwandan producer, expanding and courting US buyers |
+| 5 | TA-022 | Metallurgical Products India Pvt. Ltd. (MPIL) - MPIL Taloja plant (T-27 MIDC Taloja) (India) | 4 | Small independent RMAP-conformant K-salt/oxide producer; feed documentation needed |
+| 6 | TA-054 | D Block Metals, LLC - D Block Metals Lincolnton HQ and main processing facility (1808 Indian Creek Rd); second site Gastonia NC (United States) | 4 | US RMAP-conformant tantalum recycler; fits the statutory recycled route if scrap origin is documented |
+| 7 | TA-055 | Exotech, Inc. - Exotech Pompano Beach facilities (1851 Blount Road; three buildings, ~58,000 sq ft) (United States) | 4 | Independent US scrap processor that buys and sells; recycled route with origin paperwork |
+| 8 | TA-044 | STEREON Metals Hermsdorf GmbH (formerly QSIL Metals Hermsdorf; ex-H.C. Starck Hermsdorf) - STEREON Metals Hermsdorf plant (sister site Calne, UK) (Germany) | 4 | Mid-size EU mill-product and target maker with large stock for aerospace and defense |
+| 9 | TA-040 | Metalysis Ltd - Metalysis production site (Rotherham area, South Yorkshire) (United Kingdom) | 4 | Small UK producer marketing tantalum and C-103 powders to Western defense buyers |
+| 10 | TA-053 | Avon Specialty Metals Ltd. - Avon Specialty Metals (Gloucester area, England; site address not verified) (United Kingdom) | 4 | RMAP-conformant recycler in a qualifying country (UK) |
+
+Runners-up: Resind (Brazil, slag-derived), Globe Metals Kanyika (Malawi, 2028), Eastinco/Aterian via Wogen (Rwanda), and Global Advanced Metals Boyertown. GAM is the key compliant US source, but it is large and its ingot output is tied to DLA.
+<!-- /TOP10_tantalum -->
 
 ---
 
@@ -180,6 +308,23 @@ Runners-up: Phoenix Tailings (US metal and separation), HyProMag USA (recycling)
 **Uncommitted capacity for 2027:** unknown at every stage. No producer publishes SmCo capacity. EEC is doubling and Arnold Thailand doubles Arnold's capacity by mid-2027, but both need compliant samarium first.
 
 <!-- TOP10_smco -->
+**Top 10 broker prospects (SmCo)**
+
+| # | ID | Company - facility (country) | Score | Why |
+|---|---|---|---|---|
+| 1 | SM-017 | Electron Energy Corporation (EEC) - EEC Landisville plant (United States) | 4 | The only US SmCo maker; doubling capacity and seeking compliant samarium and cobalt |
+| 2 | SM-008 | LSCV (LS Eco Energy Vietnam subsidiary) - LSCV rare earth metal plant (Vietnam) | 4 | 240 t/yr samarium metal from 2027 on Lynas oxide, aimed at defense SmCo demand |
+| 3 | SM-006 | Less Common Metals Ltd (LCM) - LCM Hooton Park plant, Ellesmere Port (United Kingdom) | 3 | The only operating Western samarium metal plant; supply tight until the Q3 2027 expansion |
+| 4 | SM-010 | Less Common Metals Ltd (LCM) - LCM Hooton Park plant, Ellesmere Port (United Kingdom) | 3 | Key non-China SmCo alloy source; cobalt origin must be documented |
+| 5 | SM-001 | Solvay SA (La Rochelle rare earths plant) - Solvay La Rochelle plant (France) | 3 | One of few non-China samarium oxide producers, able to scale; feed origin needs verifying |
+| 6 | SM-003 | Lynas Malaysia Sdn Bhd - Lynas Advanced Materials Plant (LAMP), Gebeng (Malaysia) | 3 | Clean samarium oxide since Mar 2026; half of heavy-RE output committed to JARE |
+| 7 | SM-014 | Arnold Magnetic Technologies AG - Arnold Lupfig SmCo plant (RECOMA) (Switzerland) | 3 | Established aerospace/defense SmCo maker that must replace Chinese samarium; Thailand line doubles capacity mid-2027 |
+| 8 | SM-013 | Magneti Ljubljana d.d. - Magneti Ljubljana plant (Slovenia) | 3 | Independent EU SmCo maker that may welcome buyers; ownership and inputs need diligence |
+| 9 | SM-005 | Ucore Rare Metals Inc. (Louisiana Strategic Metals Complex) - Louisiana Strategic Metals Complex (SMC) (United States) | 3 | Small, government-funded future Sm/Gd separation source (Louisiana) |
+| 10 | SM-011 | Vacuumschmelze GmbH & Co. KG (VAC) - VAC Hanau headquarters plant (Germany) | 3 | Large EU SmCo maker; Energy Fuels acquisition pending (early 2027) could change its sourcing |
+
+Also watch REalloys (Ohio, samarium metal, design stage).
+<!-- /TOP10_smco -->
 
 ---
 
@@ -211,6 +356,23 @@ Runners-up: Phoenix Tailings (US metal and separation), HyProMag USA (recycling)
 - Electra Battery Materials (Ontario) makes battery-grade sulfate from H2 2027. That product is not suitable for SmCo.
 
 <!-- TOP10_cobalt -->
+**Top 10 broker prospects (cobalt for SmCo)**
+
+| # | ID | Company - facility (country) | Score | Why |
+|---|---|---|---|---|
+| 1 | CO-017 | Jervois group - Sao Miguel Paulista (SMP) refinery - Sao Miguel Paulista nickel-cobalt refinery (Brazil) | 4 | ~2,000 t/yr uncommitted cobalt cathode from late 2027 under a US-controlled owner; screen the feed |
+| 2 | CO-030 | Jervois Finland Oy - Jervois Finland Kokkola refinery (Finland) | 4 | One of few non-China fine cobalt powder makers, US-owned; feed probably CMOC-linked, so document each lot |
+| 3 | CO-027 | Managem S.A. (CMBA cobalt cathode) - Managem cobalt cathode plant (hydrometallurgical; site not named on product page) (Morocco) | 4 | Small, clean primary-cobalt cathode from its own Moroccan mine |
+| 4 | CO-023 | Jervois Finland Oy - Jervois Finland Kokkola refinery (Finland) | 4 | Operating non-China cobalt refiner selling to aerospace and defense; same feed caveat |
+| 5 | CO-021 | Vale Base Metals - Long Harbour Processing Plant - Long Harbour Processing Plant (Canada) | 3 | Clean Canadian electrolytic cobalt rounds; large seller with direct customers |
+| 6 | CO-022 | Vale Base Metals - Port Colborne refinery - Port Colborne refinery (Canada) | 3 | Clean Canadian electrolytic cobalt; large seller |
+| 7 | CO-016 | Umicore Olen (Cobalt & Specialty Materials) - Umicore Olen plant (Belgium) | 3 | Major non-China cobalt metal and powder supplier with audited sourcing; large group |
+| 8 | CO-015 | Glencore - Murrin Murrin Operations - Murrin Murrin (Australia) | 2 | Clean integrated Australian cobalt, marketed directly by Glencore |
+| 9 | CO-018 | Electra Battery Materials Corporation - Electra cobalt refinery, Temiskaming Shores (Canada) | 3 | Only planned North American cobalt refinery (H2 2027); sulfate, so not SmCo grade |
+| 10 | CO-034 | Nth Cycle, Inc. - Nth Cycle new refining facility (DOE-selected; site not stated) (United States) | 3 | Small DOE-backed US cobalt recycler; site and timing not set |
+
+Sherritt (Canada) is excluded in practice: its cobalt is Cuban-origin and barred by the US embargo.
+<!-- /TOP10_cobalt -->
 
 ---
 
@@ -246,6 +408,23 @@ Runners-up: Phoenix Tailings (US metal and separation), HyProMag USA (recycling)
 **Government:** Elmet received the Department of War's $450M investment (shared with tungsten), plus a DLA contract of about $36M for TZM and Mo/W wire and $4.3M for molybdenum interceptor parts. Amaero has EXIM financing of $22.8M.
 
 <!-- TOP10_molybdenum -->
+**Top 10 broker prospects (molybdenum)**
+
+| # | ID | Company - facility (country) | Score | Why |
+|---|---|---|---|---|
+| 1 | MO-045 | Langeloth Metallurgical Company LLC (Centerra Gold) - Langeloth metallurgical facility (six roasters) (United States) | 5 | ~27-29 Mlb/yr idle US roasting capacity buying third-party concentrate; clean owner. A broker can supply documented feed |
+| 2 | MO-048 | Molymet Germany GmbH (formerly Chemiemetall) - Molymet Germany plant (Germany) | 4 | 1,700 t/yr molybdenum powder from Chilean oxide; the clearest compliant powder source |
+| 3 | MO-056 | Elmet Technologies LLC - Elmet Lewiston plant and HQ (1560 Lisbon St) (United States) | 4 | US Mo/TZM mill products, DoW- and DLA-backed and expanding; verify feed |
+| 4 | MO-060 | Rhenium Alloys LLC (operating as Molymet Alloys) - Rhenium Alloys plant (United States) | 4 | Small US Mo-Re and Mo mill-product maker for defense; new owner (Molymet) investing |
+| 5 | MO-050 | Amaero Inc. - Amaero atomization and PM-HIP facility (United States) | 4 | US spherical refractory powders (AS9100, ITAR), EXIM-financed; verify molybdenum feed |
+| 6 | MO-061 | Treibacher Industrie AG - Treibacher Althofen works (Austria) | 4 | EU recycled molybdenum (FeMo/FeNiMo) from European spent catalysts |
+| 7 | MO-047 | Molymet (MolymetNos) - MolymetNos plasma spheroidization system (Chile) | 4 | New spherical Mo/Re powder line seeking additive-manufacturing customers |
+| 8 | MO-042 | Climax Molybdenum Company - Fort Madison Operations (roasting and chemical conversion) (United States) | 3 | Fully US mine-to-pure-oxide/ADM chain (precursor for powder) |
+| 9 | MO-052 | Plansee SE - Plansee Reutte works (Austria) | 3 | TZM, ML and MoRe semis made from Molymet oxide; large group |
+| 10 | MO-002 | Gibraltar Mines Ltd (Trekor Metals, formerly Taseko Mines) - Gibraltar mine and molybdenum plant (Canada) | 3 | Clean Canadian concentrate sold at the mine gate (Trekor Metals) |
+
+Also watch Centerra Thompson Creek (Idaho, restart mid-2027, captive to Langeloth) and Greenland Resources Malmbjerg (planned).
+<!-- /TOP10_molybdenum -->
 
 ---
 
@@ -290,6 +469,23 @@ Runners-up: Phoenix Tailings (US metal and separation), HyProMag USA (recycling)
 - **Germanium:** Korea Zinc's ~10 t/yr is the only identified free block. It is covered only by a non-binding Lockheed Martin MoU.
 
 <!-- TOP10_gallium_germanium -->
+**Top 10 broker prospects (gallium and germanium)**
+
+| # | ID | Company - facility (country) | Score | Why |
+|---|---|---|---|---|
+| 1 | GA-003 | METLEN Energy & Metals S.A. - Aluminium of Greece plant - Aluminium of Greece alumina refinery - gallium plant (Greece) | 4 | 50 t/yr gallium from Q3 2027, clean EU chain, ~59% not yet publicly contracted |
+| 2 | GA-006 | Atlantic Alumina Company, LLC (ATALCO) - Gramercy alumina refinery - primary gallium circuit (United States) | 4 | First US primary gallium (pilot late 2026, 50 t/yr target); only the DLA stockpile contract is public |
+| 3 | GE-003 | KEMCO (Korea Zinc subsidiary) - Onsan germanium line - Onsan smelter complex - germanium line (South Korea) | 4 | New uncommitted germanium from 2027 with only a non-binding Lockheed MoU; confirm zinc-concentrate origin |
+| 4 | GE-016 | Lattice Materials LLC - Lattice Materials crystal growth and machining facility (~30,000 sq ft) (United States) | 4 | Small ITAR-registered US germanium crystal maker expanding with DPA money |
+| 5 | GA-014 | Indium Corporation - Rome and Utica, NY gallium refining facilities (United States) | 3 | The only US high-purity gallium refiner, building non-China feed; could toll-refine compliant crude |
+| 6 | GA-013 | CMK, s.r.o. (CMK Ltd.) - Zarnovica plant (Slovakia) | 3 | Small EU 7N gallium refiner that could refine non-China crude (e.g., METLEN) |
+| 7 | GE-011 | 5N Plus Inc. - St. George, Utah facility - 5N+ St. George production facility (United States) | 3 | US germanium metal, wafers and optics with three DoD/DoW awards; backlog-constrained |
+| 8 | GE-007 | Teck Metals Ltd. - Trail Operations - Trail Operations metallurgical complex (Canada) | 3 | The cleanest primary GeO2/GeCl4 source (Red Dog feed); large, expansion undated |
+| 9 | GE-004 | Blue Moon Metals Inc. - Apex project - Apex mine (past-producing Ge/Ga/Cu underground mine) (United States) | 3 | Ge/Ga-bearing ore from Apex, Utah (from Q3 2027), seeking buyers |
+| 10 | GA-008 | ElementUSA - Gramercy bauxite-residue demonstration facility (initial development at Cedar Park, TX accelerator) (United States) | 3 | DPA-funded gallium/scandium demonstration from bauxite residue, uncommitted, no dates |
+
+Alcoa Wagerup (Australia, 100 t/yr) is the biggest new source but is committed to its partners.
+<!-- /TOP10_gallium_germanium -->
 
 ---
 
@@ -316,6 +512,21 @@ Runners-up: Phoenix Tailings (US metal and separation), HyProMag USA (recycling)
   - Material held in the Vault is therefore not automatically compliant.
 
 <!-- TOP10_traders -->
+**Top 10 partner prospects (traders, stockholders)**
+
+| # | ID | Company - facility (country) | Score | Why |
+|---|---|---|---|---|
+| 1 | TR-013 | Traxys North America LLC - Traxys North America office (United States) | 4 | Independent; contracted non-China NdPr/DyTb (Arafura) and NioCorp output; Project Vault supplier |
+| 2 | TR-006 | Traxys Europe S.A. - Traxys Group headquarters (Luxembourg) | 4 | El Moto tungsten exclusive (from 2029) and Arafura NdPr; independent merchant |
+| 3 | TR-009 | Wogen Resources Limited - Wogen Resources head office (United Kingdom) | 4 | Employee-held minor-metals house with Rwandan tantalum exclusive and W/Mo/Co books; must keep lots separate from its China desk |
+| 4 | TR-022 | Magnetic Component Engineering LLC (MCE) - MCE (United States) | 4 | The only distributor found advertising DFARS-compliant magnet stock; check the 2027 basis |
+| 5 | TR-004 | Sojitz Corporation - Sojitz head office (Japan) | 3 | Controls Lynas Dy/Tb/Sm flows and future JAGA gallium; Japan-earmarked but worth asking for surplus |
+| 6 | TR-007 | Glencore (cobalt marketing) - Glencore head office (cobalt marketing) (Switzerland) | 3 | Non-China refined cobalt brands (Nikkelverk, Murrin Murrin); large and already supplying DLA and the Vault |
+| 7 | TR-008 | Darton Commodities Ltd - Darton UK office (United Kingdom) | 3 | Cobalt-metal specialist offering consignment and finance |
+| 8 | TR-026 | TRADIUM GmbH - TRADIUM / METLOCK bonded warehouse (Germany) | 3 | Owner-managed stockholder with physical minor-metal stock in a bonded warehouse; prove origin lot by lot |
+| 9 | TR-028 | Midwest Tungsten Service, Inc. - Midwest Tungsten Service (United States) | 3 | ITAR-registered US stock of W, WHA, Ta and Mo mill products; no origin data |
+| 10 | TR-019 | Dexter Magnetic Technologies - Dexter Magnetic Technologies HQ (United States) | 3 | AS9100 US magnet distributor and assembler with sister SmCo/NdFeB brands |
+<!-- /TOP10_traders -->
 
 ---
 
@@ -334,6 +545,23 @@ Runners-up: Phoenix Tailings (US metal and separation), HyProMag USA (recycling)
 - **Grade testing is plentiful in the US and allied countries:** EAG, NSL Analytical, Luvak, LTI, Dirats, IMR, Element, SGS Lakefield, Intertek, ALS, Actlabs and others.
 
 <!-- TOP10_labs -->
+**Top 10 verification partners (labs)**
+
+| # | ID | Company - facility (country) | Score | Why |
+|---|---|---|---|---|
+| 1 | LB-024 | Source Certain - Source Certain (offices Perth WA; Colorado, USA; York, UK) (Australia) | 4 | Commercial trace-element and isotope origin verification with a US office; reference libraries needed for W/Ta/REE |
+| 2 | LB-025 | BGR - Federal Institute for Geosciences and Natural Resources (Analytical Fingerprint) - BGR Hannover (Germany) | 3 | The best-established origin method for tantalum and tungsten concentrates (Analytical Fingerprint); government body |
+| 3 | LB-021 | Alex Stewart International - Alex Stewart International laboratory (Aintree) (United Kingdom) | 4 | Minor-metals sampling, weighing and assays in 40+ countries |
+| 4 | LB-022 | Alfred H Knight (AHK) - AHK group headquarters (United Kingdom) | 4 | Independent inspection and supervision; US lab in Spartanburg, SC |
+| 5 | LB-023 | Ledoux & Co. - Ledoux & Co. laboratory (United States) | 4 | US umpire assays accepted for settlement; on-site witnessing; ISO/IEC 17025 |
+| 6 | LB-012 | EAG Laboratories - EAG Syracuse (Liverpool) NY laboratory (one of 9 North American EAG sites) (United States) | 4 | GDMS full-survey impurity profiles to match high-purity lots to producer signatures |
+| 7 | LB-017 | NSL Analytical Services, Inc. - NSL Analytical (4450 Cranwood Pkwy) and NSL Metallurgical (United States) | 4 | ISO/IEC 17025, Nadcap, ITAR; aerospace spec chemistry |
+| 8 | LB-007 | SGS Canada Inc. (Natural Resources - Minerals, Lakefield) - SGS Lakefield Metallurgical Centre of Excellence (Canada) | 4 | Accredited rare-earth methods and pilot-scale processing know-how (Lakefield, Ontario) |
+| 9 | LB-026 | Isobar Science - Isobar Science laboratory (United States) | 3 | US commercial Pb/Sr isotope analyses for concentrate provenance (SGS-owned) |
+| 10 | LB-005 | Activation Laboratories Ltd. (Actlabs) - Actlabs headquarters laboratory (Canada) | 3 | Allied (Canadian) geochemistry lab with an isotope and geochronology line |
+
+For chain-of-custody documentation (not testing): ITSCI (Great Lakes tin, tantalum and tungsten), Circulor (digital traceability), Cartograph (supplier-origin requests).
+<!-- /TOP10_labs -->
 
 ---
 
@@ -476,4 +704,51 @@ Limitation: the per-session web-search cap stopped the agents from sweeping ever
 | Gallium | All 4 stages | **Primary extraction is nominal:** about 3 t/yr in Japan, captive |
 | Germanium | All 5 stages | None. Traceability is the issue |
 
-<!-- VERIFICATION_PLACEHOLDER -->
+---
+
+## 12. Verification pass
+
+After the research, independent verifiers re-checked a random sample of **74 rows, about 15% of the file, drawn from every chain**. They checked each row against its cited sources and, where needed, fresh searches. Rows with high broker-fit scores were sampled slightly more often.
+
+| Result | Rows | Share |
+|---|---|---|
+| Confirmed as written | 36 | 49% |
+| Minor issues (outdated detail, missing award, wording) | 28 | 38% |
+| Major issues (wrong owner, missed covered-country tie, wrong status) | 9 | 12% |
+| Could not be verified | 1 | 1% |
+
+**Every issue found was corrected in the data.** The corrections and the evidence for each are in `data/staging/verification/`.
+
+The nine major issues:
+- **Wrong owner (5 rows):**
+  - Isobar Science is owned by SGS.
+  - Hartree is owned by its managers and Oaktree/Brookfield funds.
+  - Nouryon is owned by Carlyle and GIC.
+  - Buffalo Tungsten was sold to Sandvik in 2023, so its score dropped from 5 to 4.
+  - ReElement is standalone after American Resources' deconsolidation; its $80M OSC loan was withdrawn.
+- **Missed covered-country tie (2 rows):**
+  - TDK runs on Chinese rare earths; it is now `likely_noncompliant`.
+  - A.L.M.T. has a molybdenum plant in China, 70% owned by Xiamen Tungsten.
+- **Wrong status (1 row):** Elmet Coldwater does not make tungsten powder until about Q1 2027.
+- **Mislabelled offtake (1 row):** Asia Tungsten Products Vietnam's "offtake" was really a pending acquisition agreement.
+
+The unverifiable row, Tungsten Heavy Powder (San Diego), had no sign of operating since about 2003. **It was removed.**
+
+**Patterns the verifiers found, and how we responded across the whole file:**
+- **Ownership fields sometimes stopped at the operating company,** and some 2025-26 ownership changes and awards were missed. We corrected every sampled case and fixed sibling rows of the same companies. Treat `ultimate_owner` as a lead to confirm, not a final answer.
+- **Processors with undisclosed feed were graded inconsistently.** We applied one rule (decision 21a in `docs/decisions.md`):
+  - 10 rows moved from `likely_compliant` to `at_risk`;
+  - 28 rows changed their tie from "none" to "unknown".
+- **Capacities matched their sources.** No invented numbers were found. Several are nameplate rather than actual output, as labelled.
+- **Government awards and letters of interest were under-recorded.** Missed items found in the sample were added, for example:
+  - Jervois $15M (DPA, 2023);
+  - Energy Fuels $725M (OSC conditional, 2026);
+  - USA Rare Earth $19.3M (DOE, 2026);
+  - ASM US$600M (EXIM letter of interest, 2024).
+
+  Expect a few more in rows that were not sampled.
+
+**How much to trust the file:**
+- Confidence ratings: 95 rows are `high`, 299 `medium` and 101 `low`.
+- A row marked `low` should be treated as a lead to verify, not a fact.
+- The per-session web-search cap meant many rows got no separate 2026 news check (see `docs/method.md`).

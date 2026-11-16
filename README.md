@@ -14,6 +14,26 @@ Everything here opens by double-clicking. No software beyond Excel (or any sprea
 | See the judgment calls made along the way | **docs/decisions.md** |
 | See how the research was done and what could not be verified | **docs/method.md** |
 
+## What's inside (as built on 16 November 2026)
+
+| Item | Count |
+|---|---|
+| Supplier rows (company + facility + stage) | 495, across 58 countries |
+| - NdFeB magnets, from mine to magnet and recycling | 133 |
+| - Tungsten | 79 |
+| - Molybdenum | 63 |
+| - Tantalum | 57 |
+| - Cobalt (for SmCo) | 35 |
+| - Gallium / germanium | 27 / 21 |
+| - SmCo magnets | 17 |
+| - Traders, stockholders and government stockpiles | 34 |
+| - Assay, inspection and origin-testing labs | 29 |
+| Known supply agreements (`offtakes`) | 149 |
+| Covered-country facilities for screening (`excluded`) | 140 (China 121, Russia 16, Iran 2, North Korea 1) |
+| Sources cited | 826 |
+
+About 15% of rows (74) were independently re-checked after the research; all issues found were corrected. See REPORT.md, section 12.
+
 ## The files
 
 **`suppliers.xlsx`**: the whole database in one workbook. Each tab has a frozen header row and filters.

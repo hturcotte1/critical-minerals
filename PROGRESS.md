@@ -26,10 +26,17 @@ Use this list to resume if the session is interrupted. Each research workstream 
 - [x] traders/stockholders/DLA + labs (`data/staging/traders_labs`): 58 rows (32 trader, 26 lab), 14 offtakes. Gap: per-agent web-search budget ran out, so several rows were checked against company sites only (medium/low confidence); not included: Mitsui, Hanwa, Mitsubishi RtM, Sumitomo Corp, Marubeni, Intertek, SGS (own row), BGR, RCS Global
 
 ## Verification and outputs
-- [ ] Verification pass: re-check a sample of rows per chain against sources (`data/staging/verification`)
-- [ ] Apply verification fixes
-- [ ] Build data/suppliers.csv, offtakes.csv, excluded.csv, sources.csv
-- [ ] Build suppliers.xlsx (one tab per chain plus offtakes, excluded, sources)
-- [ ] REPORT.md (per-chain analysis, gaps, completeness checks)
-- [ ] docs/method.md, README.md
-- [ ] Final commit and push
+- [x] Verification pass: 74 sampled rows re-checked (36 confirmed, 28 minor, 9 major, 1 unverifiable) - `data/staging/verification/results_*.jsonl`
+- [x] Apply verification fixes (8 logged batches in `data/staging/verification/fixes/`) + consistency pass (`tools/consistency.py`)
+- [x] Coordinator gap-fill: Mitsui, Hanwa, SGS, Intertek, BGR, IREL SmCo plant, Star Group, EQR Mt Carbine, Tungsten Mining Watershed, REEcycle, Elmet Lewiston powder, HCS Sarnia; screening entries for Chinese SmCo makers, Tianhe, Chengdu Lianhong
+- [x] Build data/suppliers.csv (495), offtakes.csv (149), excluded.csv (140), sources.csv (826)
+- [x] Build suppliers.xlsx (About, 10 chain tabs, top_prospects, offtakes, excluded, sources)
+- [x] REPORT.md (summary, per-chain analysis with top-10 tables, gaps, completeness checks, verification)
+- [x] docs/method.md, docs/decisions.md, docs/scope.md, README.md
+- [x] Final commit and push
+
+## How to rebuild after editing staging data
+1. `python3 tools/validate.py --all`
+2. `python3 tools/consistency.py` (review; `--fix` applies the safe automatic fixes)
+3. `python3 tools/build.py`
+4. `python3 tools/report_tables.py` (refreshes the top-10 tables in REPORT.md)
