@@ -12,7 +12,8 @@ Use this list to resume if the session is interrupted. Each research workstream 
 
 ## Infrastructure
 - [x] tools/schema.py, tools/validate.py, tools/append_rows.py, tools/agent_brief.md
-- [ ] tools/build.py (merge to CSV + XLSX)
+- [x] tools/build.py (merge to CSV + XLSX), tools/stats.py, tools/sample_for_verification.py, tools/verify_brief.md
+- [x] Independent award cross-check list: data/staging/verification/award_crosscheck.md
 
 ## Research workstreams (parallel agents)
 - [ ] tungsten (`data/staging/tungsten`)
@@ -22,7 +23,7 @@ Use this list to resume if the session is interrupted. Each research workstream 
 - [ ] SmCo + cobalt (`data/staging/smco_cobalt`)
 - [ ] molybdenum (`data/staging/molybdenum`)
 - [ ] gallium + germanium (`data/staging/gallium_germanium`)
-- [ ] traders/stockholders/DLA + labs (`data/staging/traders_labs`)
+- [x] traders/stockholders/DLA + labs (`data/staging/traders_labs`): 58 rows (32 trader, 26 lab), 14 offtakes. Gap: per-agent web-search budget ran out, so several rows were checked against company sites only (medium/low confidence); not included: Mitsui, Hanwa, Mitsubishi RtM, Sumitomo Corp, Marubeni, Intertek, SGS (own row), BGR, RCS Global
 
 ## Verification and outputs
 - [ ] Verification pass: re-check a sample of rows per chain against sources (`data/staging/verification`)
