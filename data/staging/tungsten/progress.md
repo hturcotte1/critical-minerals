@@ -43,3 +43,8 @@ Method note: the shared WebSearch budget ran out after about 45 searches (early 
 - Kazakhstan North Katpar: not verified.
 - Nippon Tungsten (Fukuoka): website unreachable.
 - Ownership of Lianyou Metals/Resources, Philippine Bonway/Chuangxin, Tungsten Vietnam JSC, KENEE, S.P.T., Trinity Metals, Boguty and the Upper Kairakty JV: not verified.
+
+## Dropped after verification (coordinator, 2026-11-16)
+- Tungsten Heavy Powder, Inc. (San Diego): no evidence of operation in 2024-2026 (legacy site from 2001-03, email domain parked, listed site unreachable); does not meet the operates-or-credibly-plans test. Row removed.
+## Added after verification
+- Elmet Technologies (Lewiston) metal_powder row and H.C. Starck Sarnia (Canada) metal_powder row, per Elmet S-1.
