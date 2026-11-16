@@ -335,8 +335,145 @@ Runners-up: Phoenix Tailings (US metal and separation), HyProMag USA (recycling)
 
 <!-- TOP10_labs -->
 
-<!-- GAPS_PLACEHOLDER -->
+---
 
-<!-- COMPLETENESS_PLACEHOLDER -->
+## 10. Gaps: stages with zero or near-zero compliant supply
+
+These are the places where a defense buyer will struggle to find any supply that passes the 2027 test, whatever the price. They are also where a broker adds the most value, by finding the few sources and building the documentation.
+
+| Chain | Stage | Why it's a gap | Earliest relief |
+|---|---|---|---|
+| NdFeB | Separated **Dy/Tb oxide**, uncommitted | Lynas is the only commercial non-China producer (~23 t/quarter), and most of its heavy rare earths are committed to Japan; MP's are captive | Ucore and SRC (2027, small); Iluka and Energy Fuels (2028) |
+| NdFeB | **Heavy rare earth metal** (Dy, Tb, DyFe, TbFe) | No verified operating non-China merchant capacity | REalloys Saskatoon (2028, ~45 t/yr) |
+| NdFeB | **Ferroboron** | No non-China producer could be verified. The US makes none (DOE), and known producers are in China, India and Turkey | None identified |
+| NdFeB | Bonded and MQ powder with a documented chain | Neo's Korat plant (Thailand) is the only sizeable non-China powder plant, and its oxide/alloy origin is undisclosed | None identified |
+| SmCo | **Samarium metal** | One operating Western plant (LCM, UK), capacity-short | LS Eco Energy Vietnam (trial Dec 2026, 240 t/yr); LCM +30% (Q3 2027); REalloys (later) |
+| SmCo | **SmCo magnet recycling** | None found outside China, yet the statute's recycled-SmCo exemption requires US milling and sintering | None identified |
+| SmCo | SmCo magnets with a fully documented chain | No SmCo magnet maker rates `likely_compliant`: samarium or cobalt origin is undisclosed or Chinese | EEC/Permag and Arnold switching to LCM/Solvay/Lynas samarium |
+| SmCo | US samarium separation | None operating | Energy Fuels (2028); Ucore adds Sm/Gd |
+| Cobalt | **US refined cobalt** | None operating; US supply is imports plus scrap | Electra (Canada, H2 2027, sulfate); Jervois US refinery (no date) |
+| Tungsten | **Independent US APT/oxide** | US chemical capacity is captive (GTP, Niagara, Kennametal) | Springer APT JV (late 2028 - early 2029) |
+| Tungsten | Recycled-exemption processing in qualifying countries | Several recyclers sit in non-qualifying countries (Taiwan, India, Brazil) | Use US, EU and Japanese recyclers |
+| Tantalum | **US tantalum metal/powder with a documented feed** | Only GAM Boyertown; Materion's feed is undisclosed | GAM expansion (EXIM, 2027) |
+| Tantalum | Merchant K-salt/oxide with a transparent feed | Mostly captive (GAM, KEMET, TANIOBIS) or opaque | AMG Brasil is the clearest merchant case |
+| Molybdenum | **US molybdenum powder** | No published US capacity; Elmet's feed and site are undisclosed | Elmet expansion (DoW-funded) |
+| Gallium | **Primary gallium** | ~3 t/yr outside China in 2025 (Japan, captive) | ATALCO (pilot 2026), METLEN (Q3 2027), Alcoa Wagerup (2027-28) |
+| Gallium | High-purity refining on non-China feed | Refiners exist (DOWA, Indium, CMK) but run on mostly Chinese crude | Pairing new primary projects with these refiners |
+| Germanium | Traceable non-China germanium | Only Teck (Red Dog feed) and STL/Umicore (DRC slag) have documented feed | Korea Zinc Onsan (2027) |
+| All | **Origin testing for refined products** | No validated commercial method for refined metal, oxide or magnets | Documentation and witnessed sampling instead |
+| All | **Compliant spot inventory** | Distributors don't publish origin; traceable volumes are committed to governments | None. DLA and Project Vault are competing buyers |
+
+---
+
+## 11. Completeness checks
+
+### Check 1: USGS Mineral Commodity Summaries 2026, countries with non-zero 2025 production
+
+**Tungsten:**
+
+| Country (2025 t W) | Main producers listed? |
+|---|---|
+| China (67,000), Russia (2,000), North Korea (2,000) | Covered countries: major facilities are in `excluded.csv` |
+| Vietnam (3,000) | Yes: Masan Nui Phao |
+| Kazakhstan (2,400) | Yes: Boguty (flagged as Chinese-owned); Upper Kairakty (planned). North Katpar not verified |
+| Bolivia (1,700) | Partly: Kennametal La Paz. Cooperatives and artisanal miners are not listed individually |
+| Rwanda (1,300) | Yes: Trinity Nyakabingo, Almonty Rwanda. The artisanal remainder is not listed |
+| Australia (1,000) | Yes: Group 6 Dolphin, EQ Resources Mt Carbine, Tungsten Mining Watershed (planned) |
+| Austria (840) | Yes: WBH Mittersill |
+| Spain (800) | Yes: Barruecopardo, Los Santos (restart), El Moto (construction) |
+| Portugal (700) | Yes: Panasqueira |
+| Other (2,400) | South Korea: yes (Sangdong, GB Innovation). **Not verified:** Myanmar (artisanal, mostly feeds China), Peru (Pasto Bueno: no current information found), Brazil, Mongolia, Uzbekistan, Uganda, Burundi, DRC |
+
+**Tantalum:**
+
+| Country (2025 t Ta) | Main producers listed? |
+|---|---|
+| DRC (1,300) | Partly: SMB Rubaya (conflict-area risk), MMR, Tantalex Manono. Most output is artisanal and sold through traders |
+| Rwanda (400) | Yes: Trinity Musha, Eastinco/Aterian, PowerX smelter |
+| Nigeria (390) | No: artisanal, with no formal producer to list |
+| Brazil (190) | Yes: Taboca (Chinese-owned, flagged), AMG Mibra, Resind |
+| China (80), Russia (30) | Covered countries: processors are in `excluded.csv` |
+| Australia (50) | Yes: GAM Greenbushes and Wodgina, PLS Pilgangoora, Talison (flagged) |
+| Ethiopia (40) | No: the state Kenticha mine has been halted since 2017 and its licence was revoked in 2024; the producer behind the USGS estimate could not be identified |
+| Bolivia (2), Burundi (2), Mozambique (1) | No: tiny or artisanal; Marropino has been closed since 2013 |
+
+**Rare earths:**
+
+| Country (2025 t REO) | Main producers listed? |
+|---|---|
+| China (270,000), Russia (2,600) | Covered countries: major facilities are in `excluded.csv` |
+| United States (51,000) | Yes: MP Mountain Pass, Chemours monazite, Energy Fuels |
+| Australia (29,000) | Yes: Lynas Mt Weld and Kalgoorlie, Iluka Eneabba |
+| Burma/Myanmar (22,000) | Yes, flagged: Kachin ionic clays, separated in China |
+| Thailand (4,800) | Partly: Hastings/BZNM plant. Mine producers were not identified |
+| India (2,900) | Yes: IREL |
+| Madagascar (2,700) | Not identified; Energy Fuels' Vara Mada project is listed but not producing |
+| Brazil (2,000) | Yes: Serra Verde |
+| Nigeria (1,500) | No: artisanal monazite exported to China |
+| Vietnam (150), Malaysia (110) | Not identified (very small) |
+
+The cobalt, molybdenum, gallium and germanium country checks are in each workstream's `chain_notes.md`. In short:
+- **Cobalt:** refiners are listed for all the main US import sources (Norway, Finland, Canada, Japan).
+- **Molybdenum:** the US, Chile, Peru, Mexico, Canada, Mongolia, Armenia and Uzbekistan are listed. Producers in Kazakhstan, Australia and Korea were not identified.
+- **Gallium and germanium:** all producing countries are covered.
+
+### Check 2: RMI conformant smelters outside covered countries (public proxy)
+
+We used public lists (Apple's April 2025 Smelter and Refiner List and 2026 SEC Form SD exhibits) in place of the RMI site, whose terms forbid copying its list.
+- **Tungsten:** all 17 non-China tungsten smelters on Apple's list have rows:
+  - A.L.M.T., Asia Tungsten Products Vietnam and Cronimet Brasil;
+  - Global Tungsten & Powders and H.C. Starck Tungsten;
+  - Japan New Metals, Kennametal Fallon and Kennametal Huntsville;
+  - Lianyou Metals and Lianyou Resources;
+  - Masan High-Tech Materials, Niagara Refining and Philippine Bonway;
+  - Philippine Chuangxin, TANIOBIS Smelting, Tungsten Vietnam JSC and WBH.
+
+  2026 Form SD additions also have rows: Jing Yuan (Taiwan), KENEE (Vietnam), S.P.T. (Czechia) and Tungamoy Metals (Korea, flagged as a likely Xiamen Tungsten affiliate).
+- **Tantalum:** all 20 non-China tantalum smelters on Apple's list have rows:
+  - AMG Brasil, D Block Metals and GAM Aizu;
+  - GAM Boyertown, KEMET de Mexico and Materion Newton;
+  - Metallurgical Products India, Mineração Taboca and Mitsui Kinzoku;
+  - NPM Silmet, PowerX and QuantumClean;
+  - Resind and Taki Chemical;
+  - TANIOBIS Thailand, TANIOBIS GmbH, TANIOBIS Japan and TANIOBIS Smelting;
+  - Telex Metals and Ulba.
+
+  Avon Specialty Metals (UK) also has a row.
+- **Cobalt:** both non-China cobalt refiners on Apple's list (Umicore Olen, Umicore Finland) have rows.
+
+**Re-check every status on the RMI site before relying on it.**
+
+### Check 3: every company with a US government award for these materials since 2020
+
+All of the following awardees appear in the file as their own rows. They were checked against an independent list compiled from DoD, DLA, OSC, EXIM, DOE, DFC and Commerce announcements (`data/staging/verification/award_crosscheck.md`):
+
+| Material | Awardees |
+|---|---|
+| Tungsten | Elmet, Fireweed, Guardian/Golden Metal, Sisson, Amaero, 6K Additive |
+| Tantalum | Global Advanced Metals (DLA ingot and niobium contracts, DoD niobium oxide, EXIM), Trinity Metals (DFC) |
+| Rare-earth mining and separation | MP Materials, Lynas, Ucore, NioCorp, Serra Verde, USA Rare Earth, ReElement, Phoenix Tailings, Rare Element Resources, Energy Fuels, Aclara, Northern Minerals, Pensana, American Rare Earths, Critical Metals, Rainbow, Mkango, Altona, Iluka (Australian government) |
+| NdFeB magnets and recycling | e-VAC, Noveon, Vulcan Elements, USA Rare Earth, HyProMag USA, Niron, Hertha Metals, REalloys, Advanced Magnet Lab, REEcycle |
+| Samarium and cobalt | REalloys, Ucore, Lynas, Electra, Fortune Minerals, Talon, Jervois, Nth Cycle, Redwood, Li-Cycle, Ascend Elements, Glencore (DLA cobalt contract, reported) |
+| Gallium and germanium | Alcoa (Wagerup), ATALCO, ElementUSA, 5N Plus, Lattice Materials, Korea Zinc/Crucible, Indium Corporation, Metallium/Flash Metals, ReElement |
+| Molybdenum | Elmet, Amaero |
+
+Deliberately left out:
+- Trilogy Metals: its DoW equity is for a copper-zinc project, and cobalt is not a planned product.
+- Nathan Trotter: its DoD award is for tin.
+
+Limitation: the per-session web-search cap stopped the agents from sweeping every DoD contract announcement. DLA purchase contracts in particular are often not public unless the awardee discloses them, so smaller awards may be missing.
+
+### Check 4: at least one operating non-covered supplier at every stage?
+
+| Chain | Stages with an operating non-covered supplier | Stages without one, or only nominally |
+|---|---|---|
+| Tungsten | All 5 stages | None. US APT is captive, though |
+| Tantalum | All 5 stages | None. Only GAM has a fully documented feed at the metal stage |
+| NdFeB | Mining, separation, metal/alloy, sintered, bonded, recycling, substitute (pilot) | **Ancillary inputs:** boron yes, but **ferroboron has no verified non-China producer**. **Dy/Tb separation:** only Lynas commercially |
+| SmCo | Separation, metal (LCM only), alloy, magnet | **Recycling: none.** Mining: no samarium-specific mine; samarium comes from the general rare-earth feeds mapped under NdFeB |
+| Cobalt | All 4 stages | None. Feed-origin proof is the issue |
+| Molybdenum | All 5 stages | None. Proof of the oxide feeding powder makers is the issue |
+| Gallium | All 4 stages | **Primary extraction is nominal:** about 3 t/yr in Japan, captive |
+| Germanium | All 5 stages | None. Traceability is the issue |
 
 <!-- VERIFICATION_PLACEHOLDER -->

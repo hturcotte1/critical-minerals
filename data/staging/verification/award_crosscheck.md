@@ -26,7 +26,7 @@ Used to test the completeness check "every company receiving a US government awa
 | Fortune Minerals (NICO) | cobalt | DoD DPA $6.4M | 2024-05-16 |
 | Talon Metals (Tamarack MN; ND processing) | cobalt (with Ni/Cu) | DoD $20.6M; DOE $114.8M | 2022-10-19 (DOE) |
 | Electra Battery Materials (Ontario) | cobalt | DoD DPA $20M (to confirm) | 2024 |
-| Jervois (Idaho Cobalt Operations) | cobalt | DoD DPA $15M (to confirm) | 2023 |
+| Jervois (Idaho Cobalt Operations) | cobalt | DoD DPA Title III $15M (confirmed by verifier) | 2023-06 |
 | Trilogy Metals (Ambler AK) | cobalt (minor) | DoW equity ~$35.6M | 2025-10-06 |
 | Li-Cycle (Rochester NY; now Glencore) | cobalt recycling | DOE conditional loan up to $375M | 2023-02 |
 | Redwood Materials (NV) | cobalt recycling | DOE conditional commitment up to $2B | 2023-02-09 |
