@@ -204,7 +204,7 @@ def build():
 
 # ---------------- XLSX ----------------
 WIDTHS = {
-    "supplier_id": 9, "company_name": 28, "parent_company": 22, "ultimate_owner": 22,
+    "supplier_id": 11, "company_name": 28, "parent_company": 22, "ultimate_owner": 22,
     "owner_country": 13, "covered_country_tie": 14, "tie_detail": 40, "material_chain": 11,
     "stage": 20, "products": 40, "facility_name": 28, "city": 14, "state_region": 14,
     "country": 13, "facility_status": 13, "expected_production_date": 16, "capacity_value": 11,
@@ -214,12 +214,12 @@ WIDTHS = {
     "broker_fit_score": 9, "broker_fit_rationale": 45, "commercial_contact_url": 30,
     "sources": 45, "date_accessed": 12, "confidence": 11, "notes": 60, "gbd_capability": 11,
     # offtakes
-    "offtake_id": 9, "seller": 26, "buyer": 26, "material": 18, "form": 18, "volume": 24,
+    "offtake_id": 11, "seller": 26, "buyer": 26, "material": 18, "form": 18, "volume": 24,
     "term": 18, "binding_status": 13, "price_mechanism": 28, "announcement_date": 14, "source": 45,
     # excluded
-    "excluded_id": 8, "aliases": 35, "covered_country": 13, "rmi_smelter_id": 14,
+    "excluded_id": 11, "aliases": 35, "covered_country": 13, "rmi_smelter_id": 14,
     # sources
-    "source_id": 9, "title": 60, "publisher": 28, "date": 12, "url": 60, "type": 16,
+    "source_id": 10, "title": 60, "publisher": 28, "date": 12, "url": 60, "type": 16,
 }
 
 
