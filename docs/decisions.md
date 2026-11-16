@@ -77,3 +77,14 @@ These are judgment calls made while building the database, recorded so you can s
     - `at_risk`: outside the covered countries, but with covered-country feedstock dependence, a covered-country ownership/control/financing tie, or unclear feedstock for a stage that the 2027 rule reaches.
     - `likely_noncompliant`: known covered-country stage in its supply chain for the product (for example, metal made from Chinese-separated oxide), or a covered-country-controlled operation whose product already traces through a covered country.
     - `unknown`: not enough information.
+
+21a. **Undisclosed feed rule.** The verification pass found that processors with undisclosed feed had been graded inconsistently, so we applied one rule.
+    - A non-mining facility stays `likely_compliant` only if all of its known feed comes from non-covered sources, for example its own mines or documented suppliers. That holds even when the exact mix is not published; Freeport's Climax roasters, fed by Freeport's own US and Peruvian mines, are an example.
+    - If a material share of its feed is purchased third-party material or scrap of undisclosed origin, it is `at_risk`. The 2027 test covers recycled feed explicitly.
+    - Rows changed under this rule:
+      - Global Tungsten & Powders, GTP Finland, H.C. Starck Tungsten and WBH recycling;
+      - Masan's chemical plant (tolled third-party feed);
+      - Molymex and Treibacher;
+      - Hertha Metals.
+    - The rule does not override a statutory exemption. Noveon's recycled NdFeB magnets stay `likely_compliant`, because the recycled-magnet exemption requires only US milling and sintering, not proof of where the scrap came from.
+21b. **Tie field when feed is unknown.** If no ownership, control or financing tie exists but the feed's origin is undisclosed, `covered_country_tie` is `unknown` rather than `none`. A consistency script applied this across the file.
