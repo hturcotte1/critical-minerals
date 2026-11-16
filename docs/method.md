@@ -64,6 +64,73 @@ The RMI completeness check in REPORT.md uses those public lists as a stand-in fo
 - **Merging.** Workstreams wrote JSON Lines files in `data/staging/`. A validation script checked every row against the controlled vocabularies (stage, status, assessment, availability, score, confidence) and checked that every cited URL is listed as a source. A build script merged the workstreams, removed duplicate rows, assigned IDs, and wrote the CSV files and `suppliers.xlsx`.
 - **Verification pass.** After the research, separate verifiers re-checked a random sample of rows from every chain against the cited sources. They checked owner, location, status, capacity, offtakes, awards and assessment. Discrepancies were corrected in the data, and the results are summarised in REPORT.md.
 
-## 6. What could not be verified
+## 6. Practical limits that shaped the research
 
-This section is completed from the workstream notes (`data/staging/*/chain_notes.md`) and the verification pass; see the end of this file.
+- **A cap on web searches.** The research environment allows a limited number of web searches per session. Every research agent hit it partway through:
+  - tungsten after about 45 searches;
+  - rare-earth mining and separation after about 15;
+  - the others early as well.
+
+  After that, agents worked only by opening known primary pages directly: company websites, SEC EDGAR filings, exchange announcement PDFs, government pages and USGS chapters. Two consequences:
+  - Many rows got no separate "2026 news" search. Those rows say so in `notes` and carry `medium` or `low` confidence.
+  - Discovery of lesser-known players was reduced. We therefore drew more on public smelter lists, award announcements and USGS than planned.
+
+  The coordinator used its own remaining searches for the highest-value gaps: your seed names that were missing, and the government-award cross-check.
+- **Terms of use we did not accept on your behalf:**
+  - The RMI site forbids copying its smelter lists.
+  - The ASX announcement platform requires accepting terms before opening documents. Agents only read ASX documents where search engines had already surfaced the content.
+  - Agents also did not page through the ASX data interface.
+- **Sites that blocked or failed:**
+  - DoD's DPCAP class-deviation site (HTTP 503 and certificate errors);
+  - eCFR (redirected to a bot check);
+  - acquisition.gov (timeouts);
+  - several company sites, including Solvay, Pensana, Iluka, Tosoh, Admat, BGR (partly), Star Group, Hitachi Metals/Proterial and Telex.
+
+  Facts that depended on these pages are lower confidence or left blank.
+- **No personal data:** no personal names, emails or phone numbers were collected.
+
+## 7. What could not be verified (by chain)
+
+Full lists are in each `data/staging/<workstream>/chain_notes.md` and `progress.md`. The main items:
+
+- **Rule:**
+  - the exact text of DFARS 252.225-7961 and of Class Deviation 2026-O0041 Revision 1 and any later revision;
+  - whether DoD has started a DFARS rule adding molybdenum;
+  - the outcome of FY2027 NDAA negotiations.
+- **Tungsten:**
+  - Ownership of several RMI-listed Asian APT smelters: Lianyou (2 entities, Taiwan), Philippine Bonway and Chuangxin, Tungsten Vietnam JSC, KENEE and S.P.T.
+  - Tungamoy Metals' Xiamen affiliation, which is inferred from its Korean name.
+  - The current status of Pasto Bueno (Peru) and Uzbek, Mongolian and Brazilian producers.
+  - Most processor capacities, which are not published.
+- **Tantalum:**
+  - Global Advanced Metals' ultimate owner: RCF put it up for sale in 2023 and no completed sale was found.
+  - TANIOBIS's feed origins, and the feed origins of most Japanese, Estonian, Indian and US processors.
+  - Telex Metals and PowerX details.
+  - The producers behind USGS estimates for Ethiopia and Mozambique.
+- **NdFeB:**
+  - Solvay La Rochelle capacity and feed, REEtec start-up, Pensana 2026 detail.
+  - Japanese and Korean magnet makers' raw-material origins.
+  - TDK and Proterial plant sites.
+  - Any non-China ferroboron producer.
+  - Japanese alloy makers Santoku and Resonac.
+  - Awardees under India's magnet scheme (bids received, winners not announced).
+  - Whether ReElement's $80M OSC loan fell through (Reuters reported it did; not independently confirmed).
+- **SmCo/cobalt:**
+  - Whether Shin-Etsu, TDK, Proterial or TOKIN still make SmCo.
+  - Capacities for samarium oxide, metal, alloy and SmCo magnets, which no producer publishes.
+  - Feed origins for non-China cobalt refiners other than those fed by their own mines.
+  - ERG, Ambatovy and Nornickel Harjavalta.
+  - Glencore's DLA cobalt contract (reported by Argus).
+- **Molybdenum:**
+  - Producers in Kazakhstan, Australia and Korea, and Korean ferromolybdenum makers.
+  - Feed origins for Elmet, A.L.M.T., Amaero, Toho Kinzoku, Taiyo Koko and AMG.
+  - Gulf Chemical & Metallurgical, Hudbay Constancia and Montana Resources.
+- **Gallium/germanium:**
+  - Whether China extended its suspension of the US export ban past 27 November 2026.
+  - Start-up of the ATALCO, Alcoa and ERG gallium plants.
+  - Teck's and Umicore's germanium capacities and feed shares.
+  - The Russian gallium producer.
+- **Traders/labs:**
+  - 2026 news for most trader and lab rows.
+  - Mitsubishi RtM, Sumitomo Corporation, Marubeni, Ultra Minor Metals and RCS Global (not included).
+  - The size of MCE's "DFARS compliant" stock.
