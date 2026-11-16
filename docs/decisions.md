@@ -15,6 +15,10 @@ These are judgment calls made while building the database, recorded so you can s
 3. **Ownership, control and financing ties are flagged as risk even when location passes.**
    - The DFARS test is about *where* each stage happens. EO 14415 (sec. 3(b)) and the House FY2027 NDAA bill also look at foreign ownership, control or influence (FOCI).
    - A facility outside the covered countries but owned or controlled by a covered-country entity is therefore marked `at_risk`, not `likely_compliant`.
+3a. **Small passive covered-country stakes are recorded but do not by themselves make a supplier `at_risk`.** We use roughly 10% as the line.
+    - Example: Shenghe Resources (China) holds about 3% of MP Materials, a passive, non-controlling stake. MP keeps `covered_country_tie = ownership`, with the detail recorded, but its assessment stays `likely_compliant`.
+    - Larger or controlling stakes are marked `at_risk`. Examples: CNMC's ownership of Mineração Taboca, Sinomine's of Tanco, and Tianqi's control of Talison.
+    - Board seats, offtake prepayments or financing from covered-country entities count as `control` or `financing` regardless of size.
 4. **Cobalt is in scope** because the clause text for SmCo covers "mining or production of a cobalt and samarium ore or feedstock." **Iron and boron are in scope for NdFeB** because the clause names them. We map non-China ferroboron sources under the `ancillary_inputs` stage; high-purity iron is not mapped.
 5. **Dysprosium and terbium are treated as in scope** for NdFeB, even though the stage list names only neodymium, iron and boron. This is the conservative reading.
 6. **Niobium is not mapped as a chain.** It appears only in the pending House bill (Tier 2). Tantalum rows note niobium capability where relevant.
