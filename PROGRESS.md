@@ -17,9 +17,9 @@ Use this list to resume if the session is interrupted. Each research workstream 
 
 ## Research workstreams (parallel agents)
 - [x] tungsten (`data/staging/tungsten`): 78 rows (incl. coordinator gap-fill: EQR Mt Carbine, Tungsten Mining Watershed, Tungsten Heavy Powder), 29 excluded, 13 offtakes. Gaps: search budget ran out after ~45 searches; Pasto Bueno (Peru), Uzbekistan, Brazil, Mongolia not verified; ownership of several Asian RMI-listed smelters unverified
-- [ ] tantalum (`data/staging/tantalum`)
+- [x] tantalum (`data/staging/tantalum`): 57 rows, 25 excluded, 9 offtakes. Gaps: search budget ran out early; Kenticha (Ethiopia), Noventa (Mozambique), Kyocera AVX not covered; GAM ultimate owner unresolved; Telex, PowerX unverified
 - [ ] NdFeB upstream: mining + separation (`data/staging/ndfeb_upstream`)
-- [ ] NdFeB downstream: metal/alloy, magnets, recycling, ancillary, substitutes (`data/staging/ndfeb_downstream`)
+- [x] NdFeB downstream (`data/staging/ndfeb_downstream`): 65 rows, 16 excluded, 39 offtakes. Gaps: no non-China ferroboron producer verified; Star Group, JS Link (Korea), India REPM awardees, Santoku, Resonac not verified
 - [x] SmCo + cobalt (`data/staging/smco_cobalt`): 17 smco + 35 cobalt rows, 19 excluded, 13 offtakes. Coordinator added IREL REPM SmCo plant and 3 Chinese SmCo screening entries. Gaps: search budget ran out; no SmCo recyclers found; Shin-Etsu/Proterial/TOKIN SmCo status unconfirmed; ERG, Ambatovy, Nornickel Harjavalta not verified
 - [x] molybdenum (`data/staging/molybdenum`): 63 rows, 13 excluded, 9 offtakes. Gaps: search budget ran out early (many rows checked against company/regulator pages only); Kazakhstan, Australia, South Korea producers and Korean FeMo makers not identified; Gulf Chemical & Metallurgical, Hudbay Constancia, Montana Resources unverified
 - [x] gallium + germanium (`data/staging/gallium_germanium`): 48 rows (27 Ga, 21 Ge), 20 excluded, 11 offtakes. Gaps: search budget ran out mid-way; China US-export-ban suspension status after 27 Nov 2026 unconfirmed; start-up status of Alcoa/Atalco/ERG gallium plants unconfirmed
