@@ -31,7 +31,7 @@ Used to test the completeness check "every company receiving a US government awa
 | Li-Cycle (Rochester NY; now Glencore) | cobalt recycling | DOE conditional loan up to $375M | 2023-02 |
 | Redwood Materials (NV) | cobalt recycling | DOE conditional commitment up to $2B | 2023-02-09 |
 | 5N Plus (Utah) | germanium | DoW $18.1M | approved 2025-12-15, announced 2026-01 |
-| Lattice Materials | germanium | DoW $18.5M | (to confirm) |
+| Lattice Materials | germanium | DPA Title III $18.5M (confirmed by verifier) | 2025-12-30 |
 | ElementUSA (Louisiana) | gallium (and scandium) | DoD DPA $29.9M | FY2025 |
 | Alcoa (Wagerup, WA) | gallium | DoD $174M equity financing | ~2026-09-01 |
 | Metallium / Flash Metals Texas | gallium, germanium recycling | DLA SBIR Phase II $1M | 2026-05-19 |
