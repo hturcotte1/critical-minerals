@@ -1,0 +1,4 @@
+# temporary batch files written by research agents before appending
+data/staging/**/batch*.json
+data/staging/**/tmp*
+__pycache__/
