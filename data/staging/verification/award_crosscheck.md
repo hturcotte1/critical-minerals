@@ -10,7 +10,7 @@ Used to test the completeness check "every company receiving a US government awa
 | MP Materials | ndfeb | DoD $400M preferred equity + $150M OSC loan + NdPr price floor + 10X offtake; earlier DPA awards (2020, 2022) | 2025-07-10 |
 | Lynas (Seadrift TX) | ndfeb | DoD ~$120M (2022), ~$258M (2023) | 2022-06-14; 2023-08-01 |
 | Vulcan Elements (Benson NC) | ndfeb magnets | OSC loan $620M; Commerce CHIPS LOI $50M | 2025-11-21; 2025-11-03 |
-| ReElement Technologies (Marion IN) | ndfeb separation/recycling | OSC conditional loan $80M (reportedly fell through, Reuters 2026); DoD $25M | 2025-11-21; ~2026-07 |
+| ReElement Technologies (Marion IN) | ndfeb separation/recycling | OSC conditional loan $80M (withdrawn after failed due diligence, Reuters 10 Jul 2026 - confirmed by verifier); DoD $25M | 2025-11-21; ~2026-07 |
 | USA Rare Earth (Round Top TX, Stillwater OK) | ndfeb | Commerce CHIPS LOI up to $277M + $1.3B loan | 2026-01-26 |
 | HyProMag USA (Dallas-Fort Worth) | ndfeb recycling | EXIM LOI up to $92M | 2025-06-12 |
 | Ucore (Alexandria LA) | ndfeb separation | DoD OTA $4.0M; $18.4M | 2023-06-06; 2025-05/06 |

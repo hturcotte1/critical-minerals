@@ -29,7 +29,7 @@
   - Colossus (Brazil) sends about 70% to Solvay.
 - **Downstream:** USA Rare Earth said its Q3 2026 output was capped by a shortage of non-China dysprosium oxide, priced at 14-16 times the Chinese price.
 - **Magnet capacity outside China in 2027 is about 22,000-25,000 t/yr** (sintered nameplate, an order-of-magnitude estimate). Only about 1,000-3,000 t/yr of it can be shown to run on a fully non-China mine-to-metal chain, mostly MP Materials, which is committed.
-- **The large Japanese makers disclose no China-free sourcing:** Shin-Etsu, TDK, Proterial and Daido. Shin-Etsu runs a 3,000 t/yr alloy plant in China, and VAC's German plant buys Chinese alloy flake. They are all marked `at_risk`.
+- **The large Japanese makers disclose no China-free sourcing:** Shin-Etsu, Proterial and Daido are marked `at_risk`. Shin-Etsu runs a 3,000 t/yr alloy plant in China, and VAC's German plant buys Chinese alloy flake. TDK said in February 2026 that its magnet production runs on stockpiled Chinese rare earths, so it is marked `likely_noncompliant`.
 - **The clause names iron and boron too.** Boron is plentiful outside China (Rio Tinto in California, Eti Maden in Turkey). But we could not verify any non-China ferroboron producer, and the US makes none.
 
 **Who matters at each stage (outside covered countries)**

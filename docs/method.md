@@ -114,7 +114,7 @@ Full lists are in each `data/staging/<workstream>/chain_notes.md` and `progress.
   - Any non-China ferroboron producer.
   - Japanese alloy makers Santoku and Resonac.
   - Awardees under India's magnet scheme (bids received, winners not announced).
-  - Whether ReElement's $80M OSC loan fell through (Reuters reported it did; not independently confirmed).
+  - (Resolved during verification: ReElement withdrew its $80M OSC conditional loan after failing due diligence, per Reuters, 10 Jul 2026.)
 - **SmCo/cobalt:**
   - Whether Shin-Etsu, TDK, Proterial or TOKIN still make SmCo.
   - Capacities for samarium oxide, metal, alloy and SmCo magnets, which no producer publishes.
