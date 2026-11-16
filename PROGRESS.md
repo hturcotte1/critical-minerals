@@ -22,7 +22,7 @@ Use this list to resume if the session is interrupted. Each research workstream 
 - [ ] NdFeB downstream: metal/alloy, magnets, recycling, ancillary, substitutes (`data/staging/ndfeb_downstream`)
 - [ ] SmCo + cobalt (`data/staging/smco_cobalt`)
 - [ ] molybdenum (`data/staging/molybdenum`)
-- [ ] gallium + germanium (`data/staging/gallium_germanium`)
+- [x] gallium + germanium (`data/staging/gallium_germanium`): 48 rows (27 Ga, 21 Ge), 20 excluded, 11 offtakes. Gaps: search budget ran out mid-way; China US-export-ban suspension status after 27 Nov 2026 unconfirmed; start-up status of Alcoa/Atalco/ERG gallium plants unconfirmed
 - [x] traders/stockholders/DLA + labs (`data/staging/traders_labs`): 58 rows (32 trader, 26 lab), 14 offtakes. Gap: per-agent web-search budget ran out, so several rows were checked against company sites only (medium/low confidence); not included: Mitsui, Hanwa, Mitsubishi RtM, Sumitomo Corp, Marubeni, Intertek, SGS (own row), BGR, RCS Global
 
 ## Verification and outputs

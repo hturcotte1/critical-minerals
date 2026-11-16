@@ -1,6 +1,6 @@
 # Progress: gallium_germanium workstream (updated 2026-11-16)
 
-Totals: suppliers 48 (gallium 27, germanium 21), excluded 20, offtakes 10, sources 78. validate.py: 0 errors, 0 warnings.
+Totals: suppliers 48 (gallium 27, germanium 21), excluded 20, offtakes 11, sources 79. validate.py: 0 errors, 0 warnings.
 
 Note: the shared WebSearch budget ran out partway through the run. Later checks used direct fetches of known primary pages only (USGS Minerals Yearbook 2022, AXT 10-K, company sites, DFARS 225.003). Items that needed fresh searches are listed under "Still open".
 
@@ -10,7 +10,7 @@ Note: the shared WebSearch budget ran out partway through the run. Later checks 
 - [x] Rio Tinto / Indium Corp, Vaudreuil + Jonquiere pilot (planned; NRCan C$18.95M, Quebec C$7M). Chinalco minority stake in parent flagged (not re-verified)
 - [x] Alcoa Wagerup (FID 14 Jul 2026; construction from 24 Aug 2026; DoW IBAS ~US$174M equity; 100 t/yr; offtake pro rata)
 - [x] Metlen, Aluminium of Greece (50 t/yr, 3Q 2027; US tech ~25% and Japanese chemical co. up to 16% offtakes; EIB EUR90M; CRMA strategic project)
-- [x] Atlantic Alumina (ATALCO), Gramercy LA (DoW IBAS US$150M -> ~US$400M; pilot testing; 50 t/yr target; DOE TRACE-Ga)
+- [x] Atlantic Alumina (ATALCO), Gramercy LA (DoW IBAS US$150M -> ~US$400M; pilot testing; 50 t/yr target; DOE TRACE-Ga; DLA stockpile IDIQ up to US$350M / 55,610 kg over 5 years, per Argus 11 Nov 2026 - coordinator lead verified, offtake row added)
 - [x] ElementUSA, Gramercy demo (DPA Title III US$29.9M, Nov 2025)
 - [x] Korea Zinc: Crucible JV Clarksville (Ga and Ge rows, 2029+; DoW ~40% JV; CHIPS US$210M); acquired Nyrstar US assets (Apr 2026)
 - [x] ERG Pavlodar (15 t/yr, 3Q 2026 target; Mitsubishi RtM Japan offtake). Ownership/financing ties flagged unknown
