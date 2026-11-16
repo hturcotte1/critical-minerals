@@ -33,6 +33,7 @@
 - Recyclers (Redwood, Cirba, Li-Cycle/Glencore, Fortum, Nth Cycle, ABTC, Ascend)
 - Chinese-owned non-China sources (CMOC TFM/KFM, Huayou/Lygend/GEM Indonesia HPAL, Ramu)
 - US gov awards (DPA III, DLA cobalt tender, Project Vault, DOE, EXIM, DFC)
+- Coordinator award leads to verify: Fortune Minerals (DoD DPA $6.4M, 2024-05-16; NICO + Alberta refinery); Talon Metals (DoD $20.6M; DOE $114.8M ND facility, 2022-10); Trilogy Metals (DoW equity ~$35.6M, 2025-10-06; include only if cobalt credible); Li-Cycle/Glencore (DOE loan up to $375M, 2023-02); Redwood Materials (DOE conditional up to $2B, 2023-02). Lead source: investornews follow-the-money (Feb 2026)
 - USGS MCS 2026 cobalt chapter
 
 ## To-do (excluded)

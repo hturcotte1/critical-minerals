@@ -19,6 +19,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import schema as S  # noqa: E402
 
 DATE_RE = re.compile(r"^\d{4}(-\d{2}(-\d{2})?)?$")
+EMAIL_RE = re.compile(r"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}")
 
 
 def load_jsonl(path, errors):
@@ -127,7 +128,7 @@ def validate_dir(d):
         cu = str(r.get("commercial_contact_url", "")).strip()
         if cu and not cu.startswith("http"):
             errors.append(f"{ln}: commercial_contact_url must be a URL or blank")
-        if "@" in cu or "@" in str(r.get("notes", "")):
+        if any(EMAIL_RE.search(str(v)) for v in r.values()):
             warnings.append(f"{ln}: possible email address found - personal contact details are not allowed")
         if r.get("capacity_value") not in (None, "") and not str(r.get("capacity_unit", "")).strip():
             errors.append(f"{ln}: capacity_value given without capacity_unit")
