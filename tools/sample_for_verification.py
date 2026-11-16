@@ -2,7 +2,8 @@
 """Draw a reproducible random sample of supplier rows per workstream for the
 verification pass. Writes data/staging/verification/sample_<workstream>.json
 
-Usage: python3 tools/sample_for_verification.py [fraction] [min] [max]
+Usage: python3 tools/sample_for_verification.py [fraction] [min] [max] [workstream ...]
+(if workstreams are given, only those are sampled)
 """
 import json
 import os
@@ -18,11 +19,14 @@ def main():
     frac = float(sys.argv[1]) if len(sys.argv) > 1 else 0.15
     lo = int(sys.argv[2]) if len(sys.argv) > 2 else 6
     hi = int(sys.argv[3]) if len(sys.argv) > 3 else 14
+    only = set(sys.argv[4:])
     os.makedirs(OUT, exist_ok=True)
     rng = random.Random(20261116)
     for ws in sorted(os.listdir(STAGING)):
         p = os.path.join(STAGING, ws, "suppliers.jsonl")
         if ws == "verification" or not os.path.exists(p):
+            continue
+        if only and ws not in only:
             continue
         rows = []
         with open(p, encoding="utf-8") as f:
