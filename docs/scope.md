@@ -62,6 +62,13 @@ Based on DFARS 225.7018-3 and 252.225-7052(c), unless noted.
   - the melting and all further processing take place in the United States or in a "qualifying country" (a country with a defense procurement agreement with the US; 10 U.S.C. 4863(m)(11)).
 
   Gallium and germanium join this exception on 18 Dec 2027. The DFARS clause has not added it yet. Note the tension: the DFARS text says the restriction covers "feedstock, including recycled material." Until DFARS catches up, check every recycled-feed claim against both texts.
+
+  **Which countries are "qualifying countries"** (DFARS 225.872-1)? The latest complete list we could read is a 2020 archived copy:
+  - Australia, Austria, Belgium, Canada, Czech Republic, Denmark, Egypt, Estonia, Finland, France, Germany, Greece, Israel, Italy, Japan, Latvia, Luxembourg, Netherlands, Norway, Poland, Portugal, Slovenia, Spain, Sweden, Switzerland, Turkey and the United Kingdom.
+  - The 2026 deviation text starts with the same names, but our copy was cut off after Israel, so check the live list.
+  - South Korea, India, Taiwan, Vietnam, Thailand, Brazil and Kazakhstan were **not** on the list we could read. Recycled tantalum, tungsten or molybdenum melted or processed there would not qualify for the recycled-material exception, although such material can still pass the main location test.
+
+  Sources: https://webarchive.library.unt.edu/web/20201220001216/https://www.acquisition.gov/dfars/part-225-foreign-acquisition and https://www.acquisition.gov/dfars/225.872-1-general.
 - **Other routes** (from secondary sources; not checked against the 7961 text):
   - Purchases at or below the simplified acquisition threshold.
   - Items bought and used outside the US, for example in contingency operations.
