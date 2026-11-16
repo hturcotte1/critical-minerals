@@ -20,7 +20,7 @@ Use this list to resume if the session is interrupted. Each research workstream 
 - [ ] tantalum (`data/staging/tantalum`)
 - [ ] NdFeB upstream: mining + separation (`data/staging/ndfeb_upstream`)
 - [ ] NdFeB downstream: metal/alloy, magnets, recycling, ancillary, substitutes (`data/staging/ndfeb_downstream`)
-- [ ] SmCo + cobalt (`data/staging/smco_cobalt`)
+- [x] SmCo + cobalt (`data/staging/smco_cobalt`): 17 smco + 35 cobalt rows, 19 excluded, 13 offtakes. Coordinator added IREL REPM SmCo plant and 3 Chinese SmCo screening entries. Gaps: search budget ran out; no SmCo recyclers found; Shin-Etsu/Proterial/TOKIN SmCo status unconfirmed; ERG, Ambatovy, Nornickel Harjavalta not verified
 - [ ] molybdenum (`data/staging/molybdenum`)
 - [x] gallium + germanium (`data/staging/gallium_germanium`): 48 rows (27 Ga, 21 Ge), 20 excluded, 11 offtakes. Gaps: search budget ran out mid-way; China US-export-ban suspension status after 27 Nov 2026 unconfirmed; start-up status of Alcoa/Atalco/ERG gallium plants unconfirmed
 - [x] traders/stockholders/DLA + labs (`data/staging/traders_labs`): 58 rows (32 trader, 26 lab), 14 offtakes. Gap: per-agent web-search budget ran out, so several rows were checked against company sites only (medium/low confidence); not included: Mitsui, Hanwa, Mitsubishi RtM, Sumitomo Corp, Marubeni, Intertek, SGS (own row), BGR, RCS Global
