@@ -8,8 +8,9 @@ Everything here opens by double-clicking. No software beyond Excel (or any sprea
 
 | If you want to... | Open |
 |---|---|
-| See the findings in plain English: who matters, where the bottlenecks are, the best broker prospects, the gaps | **REPORT.md** |
+| See the findings in plain English: who matters, where the bottlenecks are, the best broker prospects, the gaps | **REPORT.md**, or **REPORT.pdf** for reading and printing |
 | Browse or filter the database | **suppliers.xlsx**: one tab per material, plus prospects, offtakes, excluded facilities and sources |
+| Read or print the whole database | **suppliers.pdf**: every record with all its fields, the offtakes, screening list and sources, with clickable source links |
 | Understand exactly what the rule covers and from when | **docs/scope.md** |
 | See the judgment calls made along the way | **docs/decisions.md** |
 | See how the research was done and what could not be verified | **docs/method.md** |
@@ -92,4 +93,4 @@ About 15% of rows (74) were independently re-checked after the research; all iss
 
 ## Rebuilding the spreadsheet (only if someone edits the raw data)
 
-A technical user can run `python3 tools/validate.py --all` and then `python3 tools/build.py`. This regenerates the CSV files and `suppliers.xlsx` from `data/staging/`.
+A technical user can run `python3 tools/validate.py --all` and then `python3 tools/build.py`. This regenerates the CSV files and `suppliers.xlsx` from `data/staging/`. Then `python3 tools/report_tables.py` refreshes the report's top-10 tables, and `python3 tools/make_pdfs.py` regenerates `REPORT.pdf` and `suppliers.pdf`.
