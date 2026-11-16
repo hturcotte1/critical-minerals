@@ -1,6 +1,6 @@
 # Tungsten workstream progress (as of 2026-11-16)
 
-Final counts: 75 supplier rows, 12 offtakes, 29 excluded rows, 109 sources. Validator: 0 errors, 0 warnings.
+Final counts: 75 supplier rows, 13 offtakes, 29 excluded rows, 111 sources. Validator: 0 errors, 0 warnings.
 
 Method note: the shared WebSearch budget ran out after about 45 searches (early in the run). After that, all work used direct fetches of primary pages: company websites, SEC EDGAR (Form SD, 10-K, S-1, 8-K), USGS MCS 2026 and Minerals Yearbooks, LSE RNS headlines and Traxys releases. An attempt to page the ASX data API was denied by the permission system, so it was not used again. ASX announcement PDFs need terms to be accepted, so they were not read. Entities that only ASX documents or search could confirm have low confidence or were left out (see below).
 
@@ -18,7 +18,7 @@ Method note: the shared WebSearch budget ran out after about 45 searches (early 
 - Wolfram Industrie (Nussdorf; Dachau), Treibacher Industrie (Althofen), 6K Additive (Burgettstown PA). 4 rows.
 - Excluded: 29 rows covering China (Xiamen Tungsten, CTHM/Minmetals, Shizhuyuan, JXTC, CMOC, Jiangwu H.C. Starck, and the other RMI-listed Chinese smelters, plus Kennametal Tianjin), Russia (Gidrometallurg, KZTS, Primorskiy GOK, Lermontovskoye, Novoorlovsk, Tyrnyauz, Bom-Gorkhon/Zakamensk) and North Korea (Man-nyon).
 - SEC Form SD pass: TI (filed 2026-06-01), AMD (2026-05-28), Micron (2026-05-20) and Kennametal (2026-05-21) exhibits read. RMAP statuses as of Jan 2026 applied. New non-covered smelters added: Jing Yuan, KENEE, S.P.T., Tungamoy.
-- US government awards pass: Elmet (DoW US$450m; DLA US$2bn IDIQ), Fireweed (DPA III US$15.8m), Guardian (DPA III US$6.2m), Sisson (DPA III per USGS, amount not verified), Amaero (EXIM US$22.8m), 6K Additive (DPAI US$23.4m), Blue Moon (indirect via Elmet). All have rows.
+- US government awards pass: Elmet (DoW US$450m; DLA US$2bn IDIQ; DLA ~US$36m Mo/W wire and TZM contract, Sep 2026, added from coordinator lead and verified on Elmet's site), Fireweed (DPA III US$15.8m), Guardian (DPA III US$6.2m), Sisson (DPA III per USGS, amount not verified), Amaero (EXIM US$22.8m), 6K Additive (DPAI US$23.4m), Blue Moon (indirect via Elmet). All have rows.
 - Coordinator leads: Amaero, Guardian, Fireweed, Elmet DLA, El Moto/Traxys and DLA AMP figures, all incorporated.
 
 ## Dropped (with reason)

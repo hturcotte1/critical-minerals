@@ -2,7 +2,7 @@
 
 **How this was researched.** The shared WebSearch budget ran out after about 45 searches. The rest of the work used direct fetches of primary pages: company sites, SEC EDGAR, USGS, LSE RNS headlines and Traxys releases. ASX announcement documents require accepting terms, so they were not read. Rows that depend only on search snippets or unverifiable leads have low confidence. The open leads are listed in progress.md.
 
-**Files.** 75 supplier rows (20 mining_concentrate, 17 chemical_intermediate, 14 metal_powder, 11 heavy_alloy_fabrication, 13 recycling), 12 offtakes, 29 excluded rows and 109 sources.
+**Files.** 75 supplier rows (20 mining_concentrate, 17 chemical_intermediate, 14 metal_powder, 11 heavy_alloy_fabrication, 13 recycling), 13 offtakes, 29 excluded rows and 111 sources.
 
 ## Who matters at each stage (non-covered-country only)
 
@@ -151,7 +151,7 @@ Most big processors (GTP/Plansee, WBH/Sandvik, Kennametal, Niagara/SEI, JNM/MMC)
 
 | Recipient | Award |
 |---|---|
-| Elmet Group | DoW US$450m redeemable preferred (IBAS/Economic Defense Unit, Sep 2026); DLA IDIQ up to US$2bn, US$150m minimum (11 Sep 2026) |
+| Elmet Group | DoW US$450m committed investment (Economic Defense Unit, 14 Sep 2026; redeemable preferred plus warrants up to 19.9%, US$200m initial drawdown); DLA IDIQ up to US$2bn, US$150m minimum, base period to Aug 2031 (11-14 Sep 2026); DLA Strategic Materials ~US$36m for TZM and Mo/W wire (30 Sep 2026); DoW US$4.3m for Mo interceptor parts (Jun 2026; molybdenum) |
 | Fireweed Metals | DPA III US$15.8m (Dec 2024) |
 | Guardian Metal / Golden Metal | DPA III US$6.2m (22 Jul 2025) |
 | Sisson / Northcliff | DPA III referenced by USGS for a New Brunswick project; amount not verified |
