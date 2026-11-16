@@ -16,7 +16,69 @@
 - **"Top 10 broker prospects"** lists in each chain come from those scores, with ties broken by how soon the supply is available.
 - **Capacity figures** are in the unit the source used. Where nobody publishes a number, we say "unknown" rather than estimate.
 
-<!-- NDFEB_PLACEHOLDER -->
+---
+
+## 1. NdFeB magnets (neodymium-iron-boron)
+
+**Bottom line:**
+- **The tightest point is the heavy rare earths, dysprosium (Dy) and terbium (Tb), and the metal and alloy step.** Magnet-making capacity is not the constraint.
+- **Lynas is the only commercial non-China producer of separated Dy and Tb.** It made 23 t in the September 2026 quarter, against about 2,000 t of NdPr, and most of that is pre-committed to Japan (JARE).
+- **Non-China heavy-rare-earth feed is mostly locked up:**
+  - Serra Verde (Brazil) sells 100% to a US-government-backed buyer.
+  - Caldeira (Brazil) goes to Lynas.
+  - Colossus (Brazil) sends about 70% to Solvay.
+- **Downstream:** USA Rare Earth said its Q3 2026 output was capped by a shortage of non-China dysprosium oxide, priced at 14-16 times the Chinese price.
+- **Magnet capacity outside China in 2027 is about 22,000-25,000 t/yr** (sintered nameplate, an order-of-magnitude estimate). Only about 1,000-3,000 t/yr of it can be shown to run on a fully non-China mine-to-metal chain, mostly MP Materials, which is committed.
+- **The large Japanese makers disclose no China-free sourcing:** Shin-Etsu, TDK, Proterial and Daido. Shin-Etsu runs a 3,000 t/yr alloy plant in China, and VAC's German plant buys Chinese alloy flake. They are all marked `at_risk`.
+- **The clause names iron and boron too.** Boron is plentiful outside China (Rio Tinto in California, Eti Maden in Turkey). But we could not verify any non-China ferroboron producer, and the US makes none.
+
+**Who matters at each stage (outside covered countries)**
+
+| Stage | Key suppliers |
+|---|---|
+| Mining / concentrate | MP Materials Mountain Pass (US, ~50,700 t REO in 2025, captive); Lynas Mt Weld and Kalgoorlie (Australia, captive); Serra Verde (Brazil; bought by USA Rare Earth Sep 2026; 100% sold to US SIIE ~15 years with price floors); Lindian Kangankunde (Malawi, first concentrate Dec 2026, Stage 1 allocated); merchant intermediates in 2027 from **Hastings/BZNM Kabin Buri** (Thailand, 12,000 t/yr MREC, uncommitted) and **Pensana Longonjo** (Angola); captive 2028+ feed from Donald, Goschen, Colossus, Caldeira and Nolans; IREL (India, state-captive). *Flagged:* Peak Rare Earths' Ngualla mine (Tanzania), now owned by China's Shenghe; Myanmar's Kachin clays (separated in China) |
+| Separation (NdPr; Dy/Tb) | **Lynas Malaysia** (nameplate 10,800 t/yr NdPr; Dy since May 2025, Tb since June 2025; heavy-RE expansion late 2027); **MP Mountain Pass** (~6,075 t/yr NdPr design; 200 t/yr Dy+Tb circuit commissioning, mostly captive); **Energy Fuels White Mesa** (Utah; up to ~1,000 t NdPr in campaigns; heavy-RE expansion 2028); **Iluka Eneabba** (Australia; 5,500 t NdPr + 750 t Dy/Tb; commissioning mid-2027; ~90% uncommitted); **Caremag** (France; ~600 t Dy+Tb + ~800 t NdPr; start end-2026; partly committed); **Ucore** (Louisiana; 600 t/yr medium/heavy REE from 2027); SRC Saskatoon (Canada); NPM Silmet (Estonia); Solvay La Rochelle (France); Phoenix Tailings (NY, 2027-28); Aclara Dynamo (Louisiana, 2028); Arafura Nolans (Australia, FID May 2026) |
+| Metal and alloy | **Korean Metals Plant** (Energy Fuels since Aug 2026; 1,300 t/yr alloy rising to 3,600 t/yr; the main merchant seller, likely to become captive to VAC); **Less Common Metals** (UK; USA Rare Earth-owned; increasingly captive); MP Fort Worth (captive); SRC Saskatoon (~525 t/yr NdPr metal from 2027, ~80% to REalloys); Phoenix Tailings (NH); heavy-RE metal: REalloys (2028, ~30 t Dy + 15 t Tb) |
+| Sintered magnets (GBD noted in data) | **MP Independence** (Fort Worth, ~1,000 t, GBD; 10X plant 2028 under DoD offtake); **e-VAC** (Sumter SC, 2,000 t/yr; GM terminated its ~90% offtake in Oct 2026, now in arbitration; DLA-qualified); **USA Rare Earth Stillwater** (OK, 600 t/yr, rising to 1,200 t/yr in Q2 2027); **Noveon** (TX, recycled feed, DLA-qualified); **Vulcan Elements** (NC, 10,000 t/yr Benson plant commissioning 2027); **Neo Narva** (Estonia, 2,000 t/yr since Sep 2026); VAC (Germany, Slovakia, Finland); Star Group (Korea); Shin-Etsu, TDK, Proterial (Japan/Vietnam; Proterial planning 1,200 t/yr in India) |
+| Bonded / hot-deformed | Neo Magnequench Korat (Thailand, 2,000 t/yr powder, the only sizeable non-China MQ powder plant); Daido Electronics (Japan, Thailand); Aichi Steel; MS-Schramberg (Germany); Magneti Ljubljana (Slovenia) |
+| Recycling | **Noveon** (US milling and sintering, which fits the recycled-magnet exemption); **HyProMag** (UK and Germany operating; US plant in Texas from 2027-28, EXIM LOI $92M); **Cyclic Materials** (Mesa AZ, Kingston ON); ReElement (Indiana, DoD $25M); Caremag; smaller demonstration plants |
+| Iron and boron | Boron: Rio Tinto/U.S. Borax (California), Eti Maden (Turkey). Ferroboron: **no verified non-China producer**. High-purity iron: Hertha Metals (Texas, under construction) |
+| Rare-earth-free substitute | **Niron Magnetics** (iron nitride; 1,500 t/yr Sartell MN plant under construction; DoW $150M conditional) |
+
+**Uncommitted non-China capacity for 2027** (estimates; basis in `data/staging/ndfeb_*/chain_notes.md`):
+- **Separated NdPr oxide:** roughly 1,000-3,000 t genuinely available to a broker. Likely 2027 non-China output is ~13,000-15,000 t, but Lynas, MP, Energy Fuels and Caremag have committed most of it. From 2028, Iluka's ~90% uncommitted output (~4,000+ t/yr NdPr) becomes the largest pool.
+- **Separated Dy+Tb oxide:** only tens of tonnes uncommitted. Ucore and SRC are the main possible sources. Iluka and Energy Fuels add supply from 2028.
+- **Sintered magnets:** about 3,000-4,000 t/yr of identifiable uncommitted capacity:
+  - e-VAC's ~1,800 t freed by GM's exit;
+  - USA Rare Earth's 600-1,200 t;
+  - parts of Noveon, Narva and Vulcan's pilot plant.
+
+  Almost none of it has a documented non-China oxide-to-metal chain yet. **Closing that documentation gap is the broker's job.**
+- **Merchant intermediates:** Hastings/BZNM MREC (12,000 t/yr from Q2 2027) and Pensana (2027), both uncommitted.
+- **Defense demand for scale:** DLA's FY2025 plan listed possible purchases of 450 t of NdFeB magnet block and 300 t of NdPr oxide.
+
+**Ownership changes in 2026 to know about:**
+- Energy Fuels closed its acquisition of ASM, including the Korean Metals Plant, on 28 August 2026. Its acquisition of VAC/e-VAC is pending, with closing expected in early 2027.
+- USA Rare Earth bought Less Common Metals (November 2025) and Serra Verde (September 2026).
+- Lynas is acquiring Meteoric (Caldeira), and Wyloo now owns 60% of Yangibana.
+- China's Shenghe owns Peak (Ngualla) and holds about 3% of MP Materials, a passive stake.
+
+**Top 10 broker prospects (NdFeB)**
+
+| # | Company - facility | Why |
+|---|---|---|
+| 1 | Ucore - Louisiana Strategic Metals Complex (US) | DoW-funded medium/heavy-RE separation from 2027, uncommitted; needs both feed and customers (score 5) |
+| 2 | e-VAC Magnetics - Sumter SC (US) | 2,000 t/yr sintered, mostly uncommitted after GM's exit; DLA-qualified; upstream chain must be documented |
+| 3 | USA Rare Earth - Stillwater OK (US) | 600 → 1,200 t/yr sintered, no named offtakes; well funded (Commerce CHIPS); needs proof of alloy origin |
+| 4 | Iluka - Eneabba refinery (Australia) | ~90% of NdPr and Dy/Tb from 2028 uncommitted; government-financed; actively seeking customers |
+| 5 | Energy Fuels - Korean Metals Plant (Korea) | Main merchant non-China NdFeB alloy and NdPr metal; act before it becomes captive to VAC |
+| 6 | Noveon Magnetics - San Marcos TX (US) | US recycled route fits the statutory recycled-magnet exemption; DLA-qualified; fresh funding |
+| 7 | Rainbow Rare Earths - Phalaborwa (South Africa) | 60% of NdPr uncommitted (Neo has only an MoU); DFC-backed; first production 2028 |
+| 8 | Pensana - Longonjo (Angola) | First production 2027, uncommitted, pursuing a US route (EXIM LOI); low confidence |
+| 9 | Hastings/BZNM - Kabin Buri (Thailand) | 12,000 t/yr MREC from Q2 2027 with no offtake; verify the African feed origin and the co-owner |
+| 10 | Niron Magnetics - Sartell MN (US) | Rare-earth-free substitute, 1,500 t/yr, uncommitted, DoW-backed. Not a covered material, so it sidesteps the rule where the design allows |
+
+Runners-up: Phoenix Tailings (US metal and separation), HyProMag USA (recycling), Vulcan Elements (10,000 t/yr, commissioning 2027), Caremag (Dy/Tb), REalloys/SRC (Dy/Tb metal 2028), Neo Narva (EU magnets).
 
 ---
 
