@@ -16,7 +16,7 @@ Use this list to resume if the session is interrupted. Each research workstream 
 - [x] Independent award cross-check list: data/staging/verification/award_crosscheck.md
 
 ## Research workstreams (parallel agents)
-- [ ] tungsten (`data/staging/tungsten`)
+- [x] tungsten (`data/staging/tungsten`): 78 rows (incl. coordinator gap-fill: EQR Mt Carbine, Tungsten Mining Watershed, Tungsten Heavy Powder), 29 excluded, 13 offtakes. Gaps: search budget ran out after ~45 searches; Pasto Bueno (Peru), Uzbekistan, Brazil, Mongolia not verified; ownership of several Asian RMI-listed smelters unverified
 - [ ] tantalum (`data/staging/tantalum`)
 - [ ] NdFeB upstream: mining + separation (`data/staging/ndfeb_upstream`)
 - [ ] NdFeB downstream: metal/alloy, magnets, recycling, ancillary, substitutes (`data/staging/ndfeb_downstream`)
